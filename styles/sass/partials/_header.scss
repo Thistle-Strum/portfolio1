@@ -1,0 +1,97 @@
+
+// ***********************************************
+header {
+    min-height: 125vh;
+    background-color: rgb(34, 42, 54);
+    -webkit-animation-name: animate1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
+    animation-name: animate1;
+    animation-duration: 7s;
+    h2 {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 11%;
+    }
+}
+
+// ***********************************************
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5% 0 13% 0;
+}
+
+
+// ***********************************************
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animate1 {
+    0%   {background-color: rgb(0, 0, 0);}
+    20%  {background-color: rgb(141, 100, 208);}
+    40%  {background-color: rgb(253, 206, 80);}
+    60% {background-color: rgb(253, 128, 94)}
+    80% {background-color: rgb(65, 175, 199)}
+    100% {background-color: rgb(34, 42, 54)}
+}
+	
+/* Standard syntax */
+@keyframes animate1 {
+    0%   {background-color: rgb(0, 0, 0);}
+    20%  {background-color: rgb(141, 100, 208);}
+    40%  {background-color: rgb(253, 206, 80);}
+    60% {background-color: rgb(253, 128, 94)}
+    80% {background-color: rgb(65, 175, 199)}
+    100% {background-color: rgb(34, 42, 54)}
+}
+// ************************************
+
+.svgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// ***********************************************
+
+#linePortrait {
+    width: 100%;
+}
+
+#linePortrait path {
+    position: relative;
+    stroke-dasharray: 9000px;
+    stroke-dashoffset: 9000px;
+    animation: line-animation 10s ease forwards
+}
+
+@keyframes line-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+// ***********************************************
+
+#signature {
+    // width: clamp(14rem, 30vw, 30rem);
+    width: 100%;
+}
+
+#signature path {
+    stroke-dasharray: 5000px;
+    stroke-dashoffset: 5000px;
+    animation: line-animation 70s ease forwards
+}
+
+@keyframes line-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}   
+
+// ***********************************************
+

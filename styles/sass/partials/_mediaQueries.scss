@@ -1,0 +1,161 @@
+
+
+
+/* collapsed nav bar */
+@media (max-width: 700px) {
+    .wrapper {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .navContainer {
+        position: fixed;
+        top: -500px;
+        right: - 500px;
+        transition: all 5s ease-in-out;
+        margin: 0;
+    }
+
+    nav .menuToggle {
+        display: flex;
+        flex-direction: column;
+        margin-left: 86%;
+        padding-top: 20px;
+    }
+
+    .menuButton:hover,
+    .menuButton:focus {
+        border: salmon solid 2px;
+        // transition: border 0.5s ease-in-out;
+    }
+
+    .menuButton {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 41px;
+        height: 41px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        background-color: white;
+        border-radius: 50%;
+        z-index: 30;
+    }
+
+    .menuButtonBurger {
+        width: 25px;
+        height: 3px;
+        background: black;
+        border-radius: 5px;
+        transition: all 500ms ease-in-out;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: black;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out;
+            margin-top: 8px;
+            transform: translateY(-16px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 3px;
+            background: black;
+            border-radius: 5px;
+            transition: all 500ms ease-in-out;
+            margin-top: -8px;
+            transform: translateY(16px);
+            }
+        }
+
+        .menuButton.open .menuButtonBurger {
+            transform: translateX(-50px);
+            background: transparent;
+        }
+        
+        .menuButton.open .menuButtonBurger::before {
+            transform: rotate(45deg) translate(35px, -35px);
+            margin: 0;
+        }
+    
+        .menuButton.open .menuButtonBurger::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+            margin: 0;
+        }
+
+        .menu-checkbox:checked + .navContainer {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-left: salmon solid 7px;
+            background-color:rgb(103, 204, 240);
+            width: 60vw;
+            height: 225px;
+            padding: 75px 0px 0px 24%;
+            transition: all 600ms ease-in-out;
+            text-align: right;
+            z-index: 20;
+            top:0px;
+            right:0px;
+            border-bottom-left-radius: 100%;
+            li:nth-child(1) {
+                position: relative;
+                right: 57%;
+                top: -28%;
+            }
+            li:nth-child(2) {
+                position: relative;
+                right: 45%;
+                top: -28%;
+            }
+            li:nth-child(3) {
+                position: relative;
+                right: 33%;
+                top: -28%;
+            }
+            li:nth-child(4) {
+                position: relative;
+                right: 16%;
+                top: -28%;
+            }
+            li:nth-child(5) {
+                position: relative;
+                right: 0%;
+                top: -28%;
+            }
+        }
+        .svgContainer {
+            margin-top: 25%;
+        }
+    }
+
+
+
+@media (max-width: 475px) {
+    
+    .svgContainer {
+        position: relative;
+    }
+
+    .signature {
+        position: absolute;
+        margin-top: 103%;
+    }
+    h2 {
+        position: absolute;
+        margin-top: 129%;
+    }
+}
+
+@media (max-width: 475px) {
+    h2 {
+        font-size: 1rem;
+    }
+}
