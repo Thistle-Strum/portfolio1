@@ -1,8 +1,7 @@
 
-
-
 /* collapsed nav bar */
-@media (max-width: 700px) {
+@media (max-width: 850px) {
+
     .wrapper {
         max-width: 1280px;
         width: 100%;
@@ -133,29 +132,36 @@
         }
         .svgContainer {
             margin-top: 25%;
+            // h2 {
+            //     font-size: clamp(0.2rem, 1.8rem, 2rem)
+            // }
         }
     }
 
-
-
-@media (max-width: 475px) {
-    
+@media (max-width: 675px) {
     .svgContainer {
-        position: relative;
+        width: 95%;
+        margin: 25% auto 0 auto;
+        .signature {
+            position: absolute;
+            margin-top: 102%;
+        }
+        h2 {
+            font-size: 1.5rem;
+            position: absolute;
+            margin-top: 136%;
+        }
     }
+}
 
-    .signature {
-        position: absolute;
-        margin-top: 103%;
-    }
-    h2 {
-        position: absolute;
-        margin-top: 129%;
+@media (max-width: 450px) {
+    .svgContainer h2 {font-size: 1rem;
     }
 }
 
-@media (max-width: 475px) {
-    h2 {
-        font-size: 1rem;
+@media (max-width: 300px) {
+    .svgContainer h2 {font-size: 0.5rem;
     }
 }
+
+

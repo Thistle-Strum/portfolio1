@@ -14,7 +14,7 @@ html {
 }
 body {
     font-family: 'Roboto Serif', sans-serif;
-    font-size: clamp(1rem, 2vw, 3rem);
+    line-height: 1.7rem;
 }
 
 ul {
@@ -29,7 +29,11 @@ a {
     color: white;
     text-decoration: none;
     text-align: center;
-   
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 li a:hover {

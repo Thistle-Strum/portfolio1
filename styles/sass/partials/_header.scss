@@ -1,19 +1,12 @@
 
 // ***********************************************
 header {
-    min-height: 125vh;
+    min-height: 100vh;
     background-color: rgb(34, 42, 54);
     -webkit-animation-name: animate1; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
     animation-name: animate1;
     animation-duration: 7s;
-    h2 {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 200;
-        text-align: center;
-        margin-bottom: 11%;
-    }
 }
 
 // ***********************************************
@@ -54,6 +47,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+     h2 {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 200;
+        text-align: center;
+        margin: 2% 0 11% 0;
+    }
 }
 // ***********************************************
 

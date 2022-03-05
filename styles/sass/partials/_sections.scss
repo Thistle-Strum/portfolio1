@@ -4,7 +4,12 @@
     margin: 10% 0 0 0;
     h2 {
         color: black;
-        font-size: clamp(1.5rem, 2vw, 3rem);
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-weight: 400;
+    }
+    .aboutImg img {
+        border-radius: 50%; 
+        padding: 5 20%;
     }
 }
 

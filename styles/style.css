@@ -247,7 +247,7 @@ html {
 
 body {
   font-family: "Roboto Serif", sans-serif;
-  font-size: clamp(1rem, 2vw, 3rem);
+  line-height: 1.7rem;
 }
 
 ul {
@@ -264,6 +264,11 @@ a {
   text-align: center;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 li a:hover {
   color: #fd805e;
 }
@@ -273,7 +278,7 @@ li a:hover {
 }
 
 header {
-  min-height: 125vh;
+  min-height: 100vh;
   background-color: #222a36;
   -webkit-animation-name: animate1;
   /* Chrome, Safari, Opera */
@@ -281,13 +286,6 @@ header {
   /* Chrome, Safari, Opera */
   animation-name: animate1;
   animation-duration: 7s;
-}
-header h2 {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 200;
-  text-align: center;
-  margin-bottom: 11%;
 }
 
 .navContainer {
@@ -346,6 +344,13 @@ header h2 {
   justify-content: center;
   align-items: center;
 }
+.svgContainer h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 2% 0 11% 0;
+}
 
 #linePortrait {
   width: 100%;
@@ -391,7 +396,12 @@ header h2 {
 }
 .about h2 {
   color: black;
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+}
+.about .aboutImg img {
+  border-radius: 50%;
+  padding: 5 20%;
 }
 
 .navContainer {
@@ -404,7 +414,7 @@ header h2 {
 }
 
 /* collapsed nav bar */
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .wrapper {
     max-width: 1280px;
     width: 100%;
@@ -537,23 +547,28 @@ header h2 {
     margin-top: 25%;
   }
 }
-@media (max-width: 475px) {
+@media (max-width: 675px) {
   .svgContainer {
-    position: relative;
+    width: 95%;
+    margin: 25% auto 0 auto;
   }
-
-  .signature {
+  .svgContainer .signature {
     position: absolute;
-    margin-top: 103%;
+    margin-top: 102%;
   }
-
-  h2 {
+  .svgContainer h2 {
+    font-size: 1.5rem;
     position: absolute;
-    margin-top: 129%;
+    margin-top: 136%;
   }
 }
-@media (max-width: 475px) {
-  h2 {
+@media (max-width: 450px) {
+  .svgContainer h2 {
     font-size: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  .svgContainer h2 {
+    font-size: 0.5rem;
   }
 }
