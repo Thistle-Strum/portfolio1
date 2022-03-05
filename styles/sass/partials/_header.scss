@@ -57,13 +57,22 @@ header {
 }
 // ***********************************************
 
-
+#linePortrait {
+    max-width: 650px;
+    height: 600px;
+}
 
 #linePortrait path {
     position: relative;
     stroke-dasharray: 9000px;
     stroke-dashoffset: 9000px;
     animation: line-animation 10s ease forwards
+}
+
+#linePortraitPath {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
 }
 
 @keyframes line-animation {
@@ -74,12 +83,22 @@ header {
 
 // ***********************************************
 
-
+#signature {
+    width: 585px;
+    height: 75px; 
+}
 
 #signature path {
     stroke-dasharray: 5000px;
     stroke-dashoffset: 5000px;
     animation: line-animation 70s ease forwards
+}
+
+#signaturePath {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+
 }
 
 @keyframes line-animation {

@@ -352,12 +352,23 @@ header {
   margin: 2% 0 11% 0;
 }
 
+#linePortrait {
+  max-width: 650px;
+  height: 600px;
+}
+
 #linePortrait path {
   position: relative;
   stroke-dasharray: 9000px;
   stroke-dashoffset: 9000px;
   -webkit-animation: line-animation 10s ease forwards;
           animation: line-animation 10s ease forwards;
+}
+
+#linePortraitPath {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
 }
 
 @-webkit-keyframes line-animation {
@@ -371,11 +382,22 @@ header {
     stroke-dashoffset: 0;
   }
 }
+#signature {
+  width: 585px;
+  height: 75px;
+}
+
 #signature path {
   stroke-dasharray: 5000px;
   stroke-dashoffset: 5000px;
   -webkit-animation: line-animation 70s ease forwards;
           animation: line-animation 70s ease forwards;
+}
+
+#signaturePath {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
 }
 
 @keyframes line-animation {
@@ -540,27 +562,20 @@ header {
   }
 }
 @media (max-width: 675px) {
-  .svgContainer {
-    width: 95%;
-    margin: 25% auto 0 auto;
+  #linePortrait {
+    height: 93%;
+    width: 100%;
   }
-  .svgContainer .signature {
-    position: absolute;
-    margin-top: 102%;
+
+  #signature {
+    width: 100%;
+    position: relative;
+    top: 27%;
   }
+
   .svgContainer h2 {
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 136%;
-  }
-}
-@media (max-width: 450px) {
-  .svgContainer h2 {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 300px) {
-  .svgContainer h2 {
-    font-size: 0.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    top: -3%;
   }
 }
