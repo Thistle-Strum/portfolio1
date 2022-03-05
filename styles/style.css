@@ -573,9 +573,37 @@ header {
     top: 27%;
   }
 
+  .svgContainer {
+    position: relative;
+  }
   .svgContainer h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     position: relative;
     top: -3%;
+  }
+}
+@media (max-width: 530px) {
+  .svgContainer h2 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 99%;
+  }
+}
+@media (max-width: 450px) {
+  .svgContainer h2 {
+    font-size: 1.4rem;
+    top: 98%;
+  }
+}
+@media (max-width: 410px) {
+  .svgContainer h2 {
+    font-size: 1.2rem;
+    top: 97%;
+  }
+}
+@media (max-width: 410px) {
+  .svgContainer h2 {
+    font-size: 1rem;
+    top: 94%;
   }
 }
