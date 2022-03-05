@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css" integrity="sha512-Fx1qTIVtFTb41Tqu+TxfaaPCcpmkRIbOIKh+4OIwVYAECoW89rz4BnRy95Vu8MYSRgghC3pS9mJ435hzarnZcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/03dd5f52fd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">  
@@ -25,8 +27,8 @@
                 <ul class="navContainer">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="https://www.facebook.com/musicalstorystudio">Projects</a></li>
-                    <li><a href="https://www.facebook.com/musicalstorystudio">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>        
             <div class="svgContainer">
@@ -5750,33 +5752,86 @@
               </p>
             </div>
           </div>
+        <section>      
+          <div class="skillsContainer">
+            <div class="wrapper">
+              <h2>Skills:</h2>
+              <ul class="skillsIcons">
+                <li><i class="devicon-javascript-plain" aria-hidden="true"></i>
+                    <p>JavaScript</p>
+                </li>
+                <li><i class="devicon-react-original" aria-hidden="true"></i>
+                    <p>React</p>
+                </li>
+                <li><i class="devicon-jquery-plain" aria-hidden="true"></i>
+                    <p>JQuery</p>
+                </li>
+                <li><i class="devicon-firebase-plain" aria-hidden="true"></i>
+                    <p>Firebase</p>
+                </li>
+                <li><i class="fas fa-cogs" aria-hidden="true"></i>
+                    <p>REST APIs</p>
+                </li>
+                <li><i class="devicon-html5-plain" aria-hidden="true"></i></i>
+                  <p>HTML5</p>
+              </li>
+                <li><i class="devicon-css3-plain" aria-hidden="true"></i>
+                    <p>CSS</p>
+                </li>
+                <li><i class="devicon-sass-original" aria-hidden="true"></i>
+                    <p>Sass</p>
+              </li>
+                <li><i class="fas fa-universal-access" aria-hidden="true"></i>
+                    <p>Accessibility</p>
+                </li>
+                <li><i class="devicon-npm-original-wordmark" aria-hidden="true"></i>
+                    <p>npm</p>
+                </li>
+                <li><i class="devicon-git-plain" aria-hidden="true"></i>
+                    <p>git</p>
+                </li> 
+              </ul>   
+            </div>
+          </div>  
+        </section>
         </section>
         <section id="projects">
-          <div class="wrapper">
+          <!-- <div class="wrapper"> -->
             <div class="projectsContainer">
               <div class="firstProject">
                 <div class="firstProjectImg">
                   <img src="./assets/secondProject.png" alt="The Climate Justice project displayed on several devices">
+                  <div class="overlay1">    
+                    <h2>What is Climate Justice?</h2>
+                    <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
+                  </div>
                 </div>
-                <h2>What is Climate Justice?</h2>
-                <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
               </div>
               <div class="secondProject">   
-              <img src="./assets/thirdProject.png" alt="The Restaurant Mall project displayed on several devices">
-              <h2>The Restaurant Mall</h2>
-              <p>A psd rendering of blblblblbla</p>
+                <div class="secondProjectImg">
+                  <img src="./assets/thirdProject.png" alt="The Restaurant Mall project displayed on several devices">
+                  <div class="overlay2">                  
+                    <h2>The Restaurant Mall</h2>
+                    <p>A psd rendering of blblblblbla</p>
+                  </div> 
+                </div>
+              </div> 
               <div class="thirdProject">
-                <img src="./assets/firstProject.png" alt="The Wayback Machine project on several devices">
-                <h2>Place holder project</h2>
-                <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
-              </div>
+                <div class="firstProjectImg">
+                  <img src="./assets/firstProject.png" alt="The Wayback Machine project on several devices">
+                  <div class="overlay3">               
+                    <h2>Place holder project</h2>
+                    <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
+                  </div> 
+                </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </section>
     </main>
    
     
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js" integrity="sha512-gK8OnTXn8cTYkHqYX+bhzjQ1rClAPuG2eMy+oRuV26mSuE0EbZeULFKdyc/YGX1Z/JsC06FXxQttdX4aahjSMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <script src="script.js"></script>
 </body> 
