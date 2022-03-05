@@ -248,6 +248,7 @@ html {
 body {
   font-family: "Roboto Serif", sans-serif;
   line-height: 1.7rem;
+  background-color: #222a36;
 }
 
 ul {
@@ -405,17 +406,37 @@ header {
     stroke-dashoffset: 0;
   }
 }
-.about {
-  margin: 10% 0 0 0;
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  border-radius: 50% 50% 0 0;
+  padding: 10% 10%;
 }
-.about h2 {
+.aboutContainer h2 {
   color: black;
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 400;
 }
-.about .aboutImg img {
+.aboutContainer p {
+  text-align: center;
+}
+.aboutContainer .aboutImg {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 5% 0;
+}
+.aboutContainer .aboutImg img {
   border-radius: 50%;
   padding: 5 20%;
+}
+
+.firstProjectImg {
+  margin: 50px auto;
+  width: 75%;
 }
 
 .navContainer {
