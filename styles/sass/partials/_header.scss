@@ -57,9 +57,7 @@ header {
 }
 // ***********************************************
 
-#linePortrait {
-    width: 100%;
-}
+
 
 #linePortrait path {
     position: relative;
@@ -76,10 +74,7 @@ header {
 
 // ***********************************************
 
-#signature {
-    // width: clamp(14rem, 30vw, 30rem);
-    width: 100%;
-}
+
 
 #signature path {
     stroke-dasharray: 5000px;

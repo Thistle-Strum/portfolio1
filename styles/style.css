@@ -352,10 +352,6 @@ header {
   margin: 2% 0 11% 0;
 }
 
-#linePortrait {
-  width: 100%;
-}
-
 #linePortrait path {
   position: relative;
   stroke-dasharray: 9000px;
@@ -375,10 +371,6 @@ header {
     stroke-dashoffset: 0;
   }
 }
-#signature {
-  width: 100%;
-}
-
 #signature path {
   stroke-dasharray: 5000px;
   stroke-dashoffset: 5000px;
