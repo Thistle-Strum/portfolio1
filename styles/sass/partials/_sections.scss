@@ -1,98 +1,116 @@
-// ***********************************************
-
 .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    border-radius: 50%;
-    padding: 10% 10%;
-    h2 {
+        margin: 15% 0 10% 0;
+        .shape {
+            shape-outside: ellipse(100px 200px at 50% 50%);
+            clip-path: ellipse(100px 200px at 50% 50%);
+            width: 200px;
+            height: 400px;
+            float: left;
+            opacity: .2;
+            background-color: purple;
+        }
+        h2 {
         color: black;
         font-size: clamp(1.5rem, 4vw, 3rem);
         font-weight: 400;
+        margin-bottom: 5%;
+        }
+        p {
+            text-align: left;
+            padding: 0 5%;
+        }
     }
-    p {
-        text-align: center;
-        padding: 0 5%;
-    }
-
-    .aboutImg {
-        display: flex;
-        justify-content: flex-end;
-        width: 30%;
-        padding: 3% 0
-    }
-
-    .aboutImg img {
-        border-radius: 50%; 
-        padding: 5 20%;
-    }
-}
 // ***********************************************
 .skillsContainer {
     background-image: url(/assets/chang-qing-8oPubUm97Cc-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-.skillsIcons {
+    border-radius: 50%;
+    padding-bottom: 15%;
+    h2 {
+        color: black;
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-weight: 400;
+        margin-bottom: 5%;
+        }
+    h3{
+        text-align: center;
+    }
+    .frontEnd,
+    .progLangs,
+    .libraries,
+    .databases,
+    .workflow {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 0 0 10% 0;
-        li {
-            color: white;
-            background-color: rgba(63,115,47,0.5);
-            text-align: center;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            padding: 5%;
+        text-align: center;
+        border-radius: 10px;
+        border: 2px black solid;
+        background-color: rgba(63,115,47,0.7);
+        padding-top: 10px;
+    }
+    .progLangs .lispIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 30px;
+        }        
+    } 
+  }  
+
+// ***********************************************
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(207, 179, 179, 0.9);
+    padding: 20% auto;
+    h2 {
+        color: black;
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-weight: 400;
+        padding: 10% 0 0 0% ;
+        margin-bottom: 5%;
+    }
+}
+.firstProject,
+.secondProject,
+.thirdProject {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%; 
+    .firstProjectImg,
+    .secondProjectImg,
+    .thirdProjectImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0; 
+        img {
+            box-shadow: 5px 5px gray;
+            border: 2px gray solid;
+            border-radius: 20px;
         }
+    }
+    .text1,
+    .text2,
+    .text3 {
+        padding-left: 20px;
         p {
             font-size: 1rem;
         }
     }
+}
+
+***********************************************
 
 
-
-// ***********************************************
-.projectsContainer {
-    background-color: rgb(24,30,39);
-    padding: 20% auto;
-}	
-.firstProjectImg,
-.secondProjectImg,
-.thirdProjectImg {
-        width: 65%;
-        padding: 10% 0 0 0;
-        margin: 0 auto;
-        position: relative;
-        .overlay1,
-        .overlay2,
-        .overlay3 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            background: rgba(0,0,0, 0.9);
-            height: 78%;
-            width: 100%;
-            margin: 15.25% 0 0 0;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-          }
-          &:hover .overlay1,
-          &:hover .overlay2,
-          &:hover .overlay3 {
-              opacity: 1;
-          }
-}  
-
+***********************************************
+.footer  {
+    text-align: right;
+    border: red 2px solid;
+}
 

@@ -289,14 +289,6 @@ header {
   animation-duration: 7s;
 }
 
-.navContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 5% 0 13% 0;
-}
-
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate1 {
   0% {
@@ -350,7 +342,7 @@ header {
   font-size: 1.8rem;
   font-weight: 200;
   text-align: center;
-  margin: 2% 0 11% 0;
+  margin: 0% 0 15% 0;
 }
 
 #linePortrait {
@@ -407,105 +399,144 @@ header {
   }
 }
 .aboutContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 15% 0 10% 0;
+}
+.aboutContainer .shape {
+  shape-outside: ellipse(100px 200px at 50% 50%);
+  -webkit-clip-path: ellipse(100px 200px at 50% 50%);
+          clip-path: ellipse(100px 200px at 50% 50%);
+  width: 200px;
+  height: 400px;
+  float: left;
+  opacity: 0.2;
   background-color: purple;
-  border-radius: 50%;
-  padding: 10% 10%;
 }
 .aboutContainer h2 {
   color: black;
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 400;
+  margin-bottom: 5%;
 }
 .aboutContainer p {
-  text-align: center;
+  text-align: left;
   padding: 0 5%;
-}
-.aboutContainer .aboutImg {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%;
-  padding: 3% 0;
-}
-.aboutContainer .aboutImg img {
-  border-radius: 50%;
-  padding: 5 20%;
 }
 
 .skillsContainer {
   background-image: url(/assets/chang-qing-8oPubUm97Cc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%;
+  padding-bottom: 15%;
 }
-
-.skillsIcons {
+.skillsContainer h2 {
+  color: black;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+.skillsContainer h3 {
+  text-align: center;
+}
+.skillsContainer .frontEnd,
+.skillsContainer .progLangs,
+.skillsContainer .libraries,
+.skillsContainer .databases,
+.skillsContainer .workflow {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 0 0 10% 0;
-}
-.skillsIcons li {
-  color: white;
-  background-color: rgba(63, 115, 47, 0.5);
   text-align: center;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  padding: 5%;
+  border-radius: 10px;
+  border: 2px black solid;
+  background-color: rgba(63, 115, 47, 0.7);
+  padding-top: 10px;
 }
-.skillsIcons p {
-  font-size: 1rem;
-}
-
-.projectsContainer {
-  background-color: #181e27;
-  padding: 20% auto;
-}
-
-.firstProjectImg,
-.secondProjectImg,
-.thirdProjectImg {
-  width: 65%;
-  padding: 10% 0 0 0;
-  margin: 0 auto;
-  position: relative;
-}
-.firstProjectImg .overlay1,
-.firstProjectImg .overlay2,
-.firstProjectImg .overlay3,
-.secondProjectImg .overlay1,
-.secondProjectImg .overlay2,
-.secondProjectImg .overlay3,
-.thirdProjectImg .overlay1,
-.thirdProjectImg .overlay2,
-.thirdProjectImg .overlay3 {
+.skillsContainer .progLangs .lispIcon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.9);
-  height: 78%;
-  width: 100%;
-  margin: 15.25% 0 0 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
 }
-.firstProjectImg:hover .overlay1, .firstProjectImg:hover .overlay2, .firstProjectImg:hover .overlay3,
-.secondProjectImg:hover .overlay1,
-.secondProjectImg:hover .overlay2,
-.secondProjectImg:hover .overlay3,
-.thirdProjectImg:hover .overlay1,
-.thirdProjectImg:hover .overlay2,
-.thirdProjectImg:hover .overlay3 {
-  opacity: 1;
+.skillsContainer .progLangs .lispIcon img {
+  width: 30px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(207, 179, 179, 0.9);
+  padding: 20% auto;
+}
+.projectsContainer h2 {
+  color: black;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  padding: 10% 0 0 0%;
+  margin-bottom: 5%;
+}
+
+.firstProject,
+.secondProject,
+.thirdProject {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+.firstProject .firstProjectImg,
+.firstProject .secondProjectImg,
+.firstProject .thirdProjectImg,
+.secondProject .firstProjectImg,
+.secondProject .secondProjectImg,
+.secondProject .thirdProjectImg,
+.thirdProject .firstProjectImg,
+.thirdProject .secondProjectImg,
+.thirdProject .thirdProjectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.firstProject .firstProjectImg img,
+.firstProject .secondProjectImg img,
+.firstProject .thirdProjectImg img,
+.secondProject .firstProjectImg img,
+.secondProject .secondProjectImg img,
+.secondProject .thirdProjectImg img,
+.thirdProject .firstProjectImg img,
+.thirdProject .secondProjectImg img,
+.thirdProject .thirdProjectImg img {
+  box-shadow: 5px 5px gray;
+  border: 2px gray solid;
+  border-radius: 20px;
+}
+.firstProject .text1,
+.firstProject .text2,
+.firstProject .text3,
+.secondProject .text1,
+.secondProject .text2,
+.secondProject .text3,
+.thirdProject .text1,
+.thirdProject .text2,
+.thirdProject .text3 {
+  padding-left: 20px;
+}
+.firstProject .text1 p,
+.firstProject .text2 p,
+.firstProject .text3 p,
+.secondProject .text1 p,
+.secondProject .text2 p,
+.secondProject .text3 p,
+.thirdProject .text1 p,
+.thirdProject .text2 p,
+.thirdProject .text3 p {
+  font-size: 1rem;
+}
+
+*********************************************** *********************************************** .footer {
+  text-align: right;
+  border: red 2px solid;
 }
 
 .navContainer {
@@ -514,7 +545,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 5% 0;
-  margin: 0% 0 0% 0;
 }
 
 /* collapsed nav bar */
