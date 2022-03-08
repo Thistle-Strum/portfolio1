@@ -1,4 +1,35 @@
 
+@media (max-width: 1025px) {
+    button {
+        padding: 5px 8px 0 8px;
+        width: 67px;
+        font-size: 19px;
+    }
+    .projectsContainer {
+        .firstProject,
+        .secondProject,
+        .thirdProject {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .text1,
+        .text2,
+        .text3 {
+            max-width: 80vw;
+            padding: 3% 0 0 0;
+            h3,
+            .buttons1,
+            .buttons2,
+            .buttons3 {
+                text-align: center;
+            }
+            p {
+                text-align: left;
+            }  
+        }
+    }
+}
 /* collapsed nav bar */
 @media (max-width: 850px) {
 
@@ -131,8 +162,15 @@
             }
         }
         .svgContainer {
-            margin-top: 25%;
+            // margin-top: 25%;
+            margin-top: 15%;
+        }
     
+        #about .wrapper,
+        #skills .wrapper,
+        .projectsContainer .wrapper,
+        #contact .wrapper {
+            width: 90%;
         }
     }
 
@@ -154,6 +192,22 @@
         top: -3%;
         }
     }
+    .contactContainer .contactForm form {
+        margin-bottom: 10%;
+        fieldset {
+            padding: 7%  5% 5% 5%;
+            input[type="text"] {
+                margin-right: 0;
+            }
+        }
+    }
+
+    #about .wrapper,
+    #skills .wrapper,
+    .projectsContainer .wrapper,
+    #contact .wrapper {
+        width: 95%;
+    }
 }
 
 @media (max-width: 530px) {
@@ -162,6 +216,10 @@
         font-size: 1.5rem;
         top: 99%;
     }
+    .contactContainer .contactForm form {
+        width: 100%
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -169,24 +227,49 @@
         font-size: 1.4rem;
         top: 98%;
     }
-}
-
-@media (max-width: 410px) {
-    .svgContainer h2 {
-        font-size: 1.2rem;
-        top: 97%;
+    .firstProject .firstProjectImg,
+    .secondProject .secondProjectImg,
+    .thirdProject .thirdProjectImg {
+        width: 310px;
     }
 }
+
+// @media (max-width: 410px) {
+//     .svgContainer h2 {
+//         font-size: 1.2rem;
+//         top: 97%;
+//     }
+// }
 
 @media (max-width: 410px) {
     .svgContainer h2 {
         font-size: 1rem;
         top: 94%;
     }
+    .aboutContainer .shape {
+        width: 0;
+
 }
-// @media (max-width: 300px) {
-//     .svgContainer h2 {font-size: 0.5rem;
-//     }
-// }
+
+    .firstProject .firstProjectImg,
+    .secondProject .secondProjectImg,
+    .thirdProject .thirdProjectImg {
+        img {
+            box-shadow: 0 0;
+        }
+    }
+    
+    
+    .contactContainer {
+        .contactForm form {    
+            box-shadow: 0 0;
+        }
+        fieldset input[type="text"], 
+        fieldset input[type="email"] {
+            padding: 13px 14px 9px 24px;
+        }
+    } 
+}
+
 
 
