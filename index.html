@@ -20,10 +20,8 @@
               <div class="menuButton">
                   <div class="menuButtonBurger"></div> 
               </div>
-              <!-- <i class="fas fa-bars"></i> -->
           </label>
           <input type="checkbox" id="menu" class="menu-checkbox">
-          
           <ul class="navContainer">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -35,8 +33,7 @@
           <div class="linePortrait">
             <!-- these are from the svg below width="650px" height="600px" -->
             <svg id="linePortrait" xmlns="http://www.w3.org/2000/svg"
-              
-              viewBox="0 0 1902 1626">
+              viewBox="0 0 1902 1626" aria-hidden="true">
               <!-- this is from linePortraitPath below fill="none" stroke="white" stroke-width="4" -->
               <path id="linePortraitPath"
                   d="M 41.00,1559.00
@@ -5532,7 +5529,7 @@
           <div class="signature">
             <!-- these are from the svg below width="585px" height="75px"" -->
             <svg id="signature" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 581 71">
+            viewBox="0 0 581 71" aria-hidden="true">
             <!-- these are from the signaturePath below fill="none" stroke="white" stroke-width="2" -->
             <path id="signaturePath"
               
@@ -5736,6 +5733,7 @@
                     100.25,49.87 99.84,48.00 99.22,45.00 Z" />
             </svg>
           </div>
+          <h1 class="sr-only">David Benitez</h1>
           <h2>Front End Web Developer</h2>
       </div>
     </div>  
@@ -5744,7 +5742,7 @@
     <section id="about">
       <div class="wrapper">
         <div class="aboutContainer">
-          <h2>About me:</h2>
+          <h2>About:</h2>
           <!-- <div class="aboutImg"> -->
           <!-- <img src="./assets/deskPhoto.png" alt="A portrait photo of David Benitez"> -->
           <!-- </div> -->
@@ -5793,7 +5791,7 @@
                     <li><p>Tone.js</p>
                   </li> -->
                 </ul>
-              <h3>Databases/REST APIs</h3>
+              <h3>Databases and APIs</h3>
                 <ul class="databases">
                   <li><i class="devicon-firebase-plain" aria-hidden="true"></i>
                     <p>Firebase</p>
@@ -5827,24 +5825,24 @@
               <h3>What is Climate Justice?</h3>
               <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
               <div class="buttons1">
-                <button>Live</button>
-                <button>Repo</button>
+                <a href="https://ecstatic-bhaskara-7d0626.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/Thistle-Strum/what-is-climate-justice"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
             </div>
           </div>
 
-          <div class="secondProject">
-            <div class="secondProjectImg">
-              <img src="./assets/project2.png" alt="The Restaurant Mall project displayed on several devices">
-            </div>    
+          <div class="secondProject">  
             <div class="text2">                  
               <h3>The Restaurant Mall</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur excepturi quaerat adipisci ipsam, iusto harum natus animi, mollitia iure, officia reprehenderit rerum sit sapiente atis. </p>
               <div class="buttons2">
-                <button>Live</button>
-                <button>Repo</button>
+                <a href="https://gallant-lalande-8be5a8.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/Thistle-Strum/project01"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
             </div>
+            <div class="secondProjectImg">
+              <img src="./assets/project2.png" alt="The Restaurant Mall project displayed on several devices">
+            </div>  
           </div>
 
           <div class="thirdProject">
@@ -5852,39 +5850,41 @@
               <img src="./assets/project3.png" alt="The Wayback Machine project on several devices">
             </div>
             <div class="text3">               
-              <h3>Place holder project</h3>
+              <h3>Bikerland</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur excepturi quaerat adipisci ipsam, iusto harum natus animi, mollitia iure, officia reprehenderit rerum sit sapiente atis. 
               </p>
               <div class="buttons3">
-                <button>Live</button>
-                <button>Repo</button>
+                <a href="https://confident-wilson-63c9b1.netlify.app/"  target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/Thistle-Strum/Bikerland"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
             </div> 
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section id="contact">
       <div class="wrapper">
-        <h2>Contact:</h2>
-        <div class="contactForm">
-          <form action="">
-            <fieldset>
-              <label for="name" aria-hidden="true"></label>
-              <input type="text" id="name" name="name" placeholder="Name">
-              <label for="email" aria-hidden="true"></label>
-              <input type="email" id="email" name="email" placeholder="Email address">
-              <label for="message" aria-hidden="true"></label>
-              <textarea name="message" id="message" name="message" placeholder="Message"  cols="30" rows="10"></textarea> 
-              <button>SUBMIT</button>  
-            </fieldset>                     
-          </form>
+        <div class="contactContainer">
+          <h2>Contact:</h2>
+          <div class="contactForm">
+            <form action="">
+              <fieldset>
+                <label for="name" aria-hidden="true"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <label for="email" aria-hidden="true"></label>
+                <input type="email" id="email" name="email" placeholder="Email address">
+                <label for="message" aria-hidden="true"></label>
+                <textarea name="message" id="message" name="message" placeholder="Message"  cols="30" rows="10"></textarea> 
+                <button>Send</button>  
+              </fieldset>                     
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <p>Developed and Designed by David Benitez 2022</p>
+    <p>Developed by David Benitez 2022</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js" integrity="sha512-gK8OnTXn8cTYkHqYX+bhzjQ1rClAPuG2eMy+oRuV26mSuE0EbZeULFKdyc/YGX1Z/JsC06FXxQttdX4aahjSMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
   <script src="script.js"></script>

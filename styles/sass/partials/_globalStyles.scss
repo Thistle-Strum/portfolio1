@@ -14,8 +14,20 @@ html {
 }
 body {
     font-family: 'Roboto Serif', sans-serif;
-    line-height: 1.7rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.02rem;
     background-color: rgb(234,234,234	);
+}
+
+h2 {
+    color: black;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 400;
+    margin-bottom: 5%;
+    }
+
+h3 {
+    margin: 3% 0;
 }
 
 ul {
