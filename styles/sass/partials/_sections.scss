@@ -6,8 +6,8 @@
             width: 200px;
             height: 400px;
             float: left;
-            opacity: .2;
-            background-color: purple;
+            margin-right: 3%;
+            background-color: rgb(211, 156, 211);
         }
         // h2 {
         // color: black;
@@ -55,8 +55,18 @@
             width: 30px;
             padding-bottom: 4px;
         }        
-    } 
-  }  
+    }
+    .libraries .toneIcon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 79px;
+            padding-bottom: 4px;
+        }         
+  } 
+}   
 
 // ***********************************************
 .projectsContainer {
@@ -172,7 +182,7 @@
         border: none;
         padding: 78px 50px 0 50px;
         input {
-            color: black;
+            color: white;
             border-radius: 20px 20px;
             background-color: rgb(34, 42, 54);
             margin-bottom: 41px;

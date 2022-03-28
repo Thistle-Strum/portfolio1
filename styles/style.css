@@ -304,19 +304,19 @@ header {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate1 {
   0% {
-    background-color: black;
+    background-color: #41073c;
   }
   20% {
-    background-color: #8d64d0;
+    background-color: #67124a;
   }
   40% {
-    background-color: #fdce50;
+    background-color: #7b298b;
   }
   60% {
-    background-color: #fd805e;
+    background-color: #854a96;
   }
   80% {
-    background-color: #41afc7;
+    background-color: #7c739e;
   }
   100% {
     background-color: #222a36;
@@ -325,19 +325,19 @@ header {
 /* Standard syntax */
 @keyframes animate1 {
   0% {
-    background-color: black;
+    background-color: #41073c;
   }
   20% {
-    background-color: #8d64d0;
+    background-color: #67124a;
   }
   40% {
-    background-color: #fdce50;
+    background-color: #7b298b;
   }
   60% {
-    background-color: #fd805e;
+    background-color: #854a96;
   }
   80% {
-    background-color: #41afc7;
+    background-color: #7c739e;
   }
   100% {
     background-color: #222a36;
@@ -420,8 +420,8 @@ header {
   width: 200px;
   height: 400px;
   float: left;
-  opacity: 0.2;
-  background-color: purple;
+  margin-right: 3%;
+  background-color: #d39cd3;
 }
 .aboutContainer p {
   text-align: left;
@@ -461,6 +461,16 @@ header {
 }
 .skillsContainer .progLangs .lispIcon img {
   width: 30px;
+  padding-bottom: 4px;
+}
+.skillsContainer .libraries .toneIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillsContainer .libraries .toneIcon img {
+  width: 79px;
   padding-bottom: 4px;
 }
 
@@ -569,7 +579,7 @@ button {
   padding: 78px 50px 0 50px;
 }
 .contactContainer fieldset input {
-  color: black;
+  color: white;
   border-radius: 20px 20px;
   background-color: #222a36;
   margin-bottom: 41px;
