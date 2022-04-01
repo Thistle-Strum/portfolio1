@@ -1,3 +1,8 @@
+#about {
+    // border-radius: 50%;;
+    // background: linear-gradient(#e66465, #9198e5);
+}
+
 .aboutContainer {
         margin: 10% 0;
         .shape {
@@ -9,12 +14,6 @@
             margin-right: 3%;
             background-color: rgb(211, 156, 211);
         }
-        // h2 {
-        // color: black;
-        // font-size: clamp(1.5rem, 4vw, 3rem);
-        // font-weight: 400;
-        // margin-bottom: 5%;
-        // }
         p {
             text-align: left;
             padding: 0 5%;
@@ -24,7 +23,6 @@
 .skillsContainer {
     background-image: url('../assets/grass.png');
     background-size: cover;
-   
     background-repeat: no-repeat;
     border-radius: 50%;
     padding: 5% 0 10% 0;
@@ -36,6 +34,7 @@
     .libraries,
     .databases,
     .workflow {
+        color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -83,7 +82,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // width: 100%;
     margin-bottom: 5%;
     .firstProjectImg {
         display: flex;
@@ -97,10 +95,10 @@
         }
     }
     .text1 {
-        max-width: 41vw;
+        max-width: 50vw;
         padding-left: 40px;
         p {
-            font-size: 1rem;
+            font-size: 0.85rem;
             
             }
         }
@@ -109,7 +107,6 @@
 .secondProject {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
     width: 100%;
     margin-bottom: 5%;
     .secondProjectImg {
@@ -124,11 +121,10 @@
         }
     }
     .text2 {
-        max-width: 45vw;
+        max-width: 50vw;
         padding-left: 40px;
         p {
-            font-size: 1rem;
-            
+            font-size: 0.85rem;
             }
         }
     }
@@ -136,9 +132,8 @@
 .thirdProject {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
     width: 100%;
-   
+    margin-bottom: 5%;
     .thirdProjectImg {
         display: flex;
         justify-content: center;
@@ -154,13 +149,37 @@
         max-width: 50vw;
         padding-left: 40px;
         p {
-            font-size: 1rem;
-            
+            font-size: 0.85rem;
             }
         }
     }
+    .fourthProject {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .fourthProjectImg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            img {
+                box-shadow: 5px 5px gray;
+                border: 2px gray solid;
+                border-radius: 20px;
+            }
+        }
+        .text4 {
+            max-width: 50vw;
+            padding-left: 40px;
+            p {
+                font-size: 0.85rem;
+                }
+            }
+        }
+
     button {
-        padding: 1% 6px 0 6px;
+        font-size: 0.85rem;
+        padding: 1px 6px 0 6px;
         margin-top: 3%;
         
     }
@@ -233,6 +252,8 @@
     text-align: center;
     color: white;
     background-color: rgb(34, 42, 54);
-    
+    p {
+    padding: 8px 0 5px 0;
+    }
 }
 

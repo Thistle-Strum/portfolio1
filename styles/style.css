@@ -237,7 +237,7 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -249,7 +249,7 @@ body {
   font-family: "Roboto Serif", sans-serif;
   line-height: 1.4rem;
   letter-spacing: 0.02rem;
-  background-color: #eaeaea;
+  background-color: rgb(234, 234, 234);
 }
 
 h2 {
@@ -283,7 +283,7 @@ img {
 }
 
 li a:hover {
-  color: #fd805e;
+  color: rgb(253, 128, 94);
 }
 
 .menu-checkbox {
@@ -292,7 +292,7 @@ li a:hover {
 
 header {
   min-height: 100vh;
-  background-color: #222a36;
+  background-color: rgb(34, 42, 54);
   -webkit-animation-name: animate1;
   /* Chrome, Safari, Opera */
   -webkit-animation-duration: 7s;
@@ -304,43 +304,43 @@ header {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate1 {
   0% {
-    background-color: #41073c;
+    background-color: rgb(65, 7, 60);
   }
   20% {
-    background-color: #67124a;
+    background-color: rgb(103, 18, 74);
   }
   40% {
-    background-color: #7b298b;
+    background-color: rgb(123, 41, 139);
   }
   60% {
-    background-color: #854a96;
+    background-color: rgb(133, 74, 150);
   }
   80% {
-    background-color: #7c739e;
+    background-color: rgb(124, 115, 158);
   }
   100% {
-    background-color: #222a36;
+    background-color: rgb(34, 42, 54);
   }
 }
 /* Standard syntax */
 @keyframes animate1 {
   0% {
-    background-color: #41073c;
+    background-color: rgb(65, 7, 60);
   }
   20% {
-    background-color: #67124a;
+    background-color: rgb(103, 18, 74);
   }
   40% {
-    background-color: #7b298b;
+    background-color: rgb(123, 41, 139);
   }
   60% {
-    background-color: #854a96;
+    background-color: rgb(133, 74, 150);
   }
   80% {
-    background-color: #7c739e;
+    background-color: rgb(124, 115, 158);
   }
   100% {
-    background-color: #222a36;
+    background-color: rgb(34, 42, 54);
   }
 }
 .svgContainer {
@@ -354,7 +354,7 @@ header {
   font-size: 1.8rem;
   font-weight: 200;
   text-align: center;
-  margin: 0% 0 15% 0;
+  margin: 0% 0 10% 0;
 }
 
 #linePortrait {
@@ -421,7 +421,7 @@ header {
   height: 400px;
   float: left;
   margin-right: 3%;
-  background-color: #d39cd3;
+  background-color: rgb(211, 156, 211);
 }
 .aboutContainer p {
   text-align: left;
@@ -443,6 +443,7 @@ header {
 .skillsContainer .libraries,
 .skillsContainer .databases,
 .skillsContainer .workflow {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -502,11 +503,11 @@ header {
   border-radius: 20px;
 }
 .firstProject .text1 {
-  max-width: 41vw;
+  max-width: 50vw;
   padding-left: 40px;
 }
 .firstProject .text1 p {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .secondProject {
@@ -527,17 +528,18 @@ header {
   border-radius: 20px;
 }
 .secondProject .text2 {
-  max-width: 45vw;
+  max-width: 50vw;
   padding-left: 40px;
 }
 .secondProject .text2 p {
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .thirdProject {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 5%;
 }
 .thirdProject .thirdProjectImg {
   display: flex;
@@ -555,11 +557,36 @@ header {
   padding-left: 40px;
 }
 .thirdProject .text3 p {
-  font-size: 1rem;
+  font-size: 0.85rem;
+}
+
+.fourthProject {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.fourthProject .fourthProjectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.fourthProject .fourthProjectImg img {
+  box-shadow: 5px 5px gray;
+  border: 2px gray solid;
+  border-radius: 20px;
+}
+.fourthProject .text4 {
+  max-width: 50vw;
+  padding-left: 40px;
+}
+.fourthProject .text4 p {
+  font-size: 0.85rem;
 }
 
 button {
-  padding: 1% 6px 0 6px;
+  font-size: 0.85rem;
+  padding: 1px 6px 0 6px;
   margin-top: 3%;
 }
 
@@ -567,7 +594,7 @@ button {
   padding-top: 10%;
 }
 .contactContainer .contactForm form {
-  background-color: #c97070;
+  background-color: rgb(201, 112, 112);
   border: none;
   border-radius: 20px 20px;
   width: 75%;
@@ -581,12 +608,12 @@ button {
 .contactContainer fieldset input {
   color: white;
   border-radius: 20px 20px;
-  background-color: #222a36;
+  background-color: rgb(34, 42, 54);
   margin-bottom: 41px;
 }
 .contactContainer fieldset textarea {
   color: white;
-  background-color: #222a36;
+  background-color: rgb(34, 42, 54);
   height: 208px;
   width: 100%;
   border-radius: 20px 20px;
@@ -658,7 +685,10 @@ button {
 .footer {
   text-align: center;
   color: white;
-  background-color: #222a36;
+  background-color: rgb(34, 42, 54);
+}
+.footer p {
+  padding: 8px 0 5px 0;
 }
 
 .navContainer {
@@ -802,7 +832,7 @@ button {
     flex-direction: column;
     align-items: center;
     border-left: salmon solid 7px;
-    background-color: #67ccf0;
+    background-color: rgb(103, 204, 240);
     width: 60vw;
     height: 225px;
     padding: 75px 0px 0px 24%;

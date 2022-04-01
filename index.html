@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="./styles/style.css">
-    <title>David Benitez</title>
+    <title>Portfolio for David Benitez</title>
 </head>
 <body>
   <header id="home">
@@ -5734,7 +5734,7 @@
             </svg>
           </div>
           <h1 class="sr-only">David Benitez</h1>
-          <h2>Web Developer</h2>
+          <h2>Front-End Developer</h2>
       </div>
     </div>  
   </header>
@@ -5776,7 +5776,7 @@
                   <li><i class="devicon-javascript-plain" aria-hidden="true"></i>
                     <p>JavaScript</p>
                   </li>
-                  <li class="lispIcon"><img src="./assets/lispLogo.png" aria-hidden="true"></i>
+                  <li class="lispIcon"><img src="./assets/lispLogoWhite.png" aria-hidden="true"></i>
                     <p>Common Lisp</p>
                   </li>
                 </ul>
@@ -5788,7 +5788,7 @@
                   <li><i class="devicon-jquery-plain" aria-hidden="true"></i>
                     <p>JQuery</p>
                   </li>
-                  <li class="toneIcon"><img src="./assets/toneLogo.png" aria-hidden="true"></i>
+                  <li class="toneIcon"><img src="./assets/toneLogoWhite.png" aria-hidden="true"></i>
                     <p>Tone.js</p>
                   </li>
                   
@@ -5818,48 +5818,61 @@
       <div class="projectsContainer">
         <div class="wrapper">
           <h2>Projects:</h2>
-
           <div class="firstProject">
             <div class="firstProjectImg">
-              <img src="./assets/project1.png" alt="The Climate Justice project displayed on several devices">
+              <img src="./assets/sounds-and-colors.png" alt="Sounds and Colors displayed on a laptop">
             </div>
             <div class="text1">    
-              <h3>What is Climate Justice?</h3>
-              <p>A simple JavaScript project which accesses the Internet Archive's Wayback Machine API.  User's can request a page from the archive by specifying a date and clicking on a provided link.</p>
+              <h3>Sounds and Colors</h3>
+              <p>A React application designed to highlight a how qualities of colour and sound can intermingle.  The app invites users to select painting from a small collection of paintings from the Rijks Museum API.  As the user is viewing a painting, they are able to listen to and manipulate musical sequences using Tone.js which are based on the colours most used in the painting.   </p>
               <div class="buttons1">
-                <a href="https://ecstatic-bhaskara-7d0626.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://sounds-and-colors.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/Thistle-Strum/sounds-and-colors"  target="_blank" rel="noopener"><button>Repo</button></a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="secondProject">
+            <div class="secondProjectImg">
+              <img src="./assets/what-is-climate-justice.png" alt="The Climate Justice project displayed on a laptop">
+            </div>
+            <div class="text2">    
+              <h3>What is Climate Justice?</h3>
+              <p>An app which invites users to compare counties using data retrieved from the World Bank API.  The app highlights each country's population, life expectancy, GDP, literacy rate, and CO2 emissions. Using css and javascript, the comparison emphasized for the user.   </p>
+              <div class="buttons2">
+                <a href="https://what-is-climate-justice.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
                 <a href="https://github.com/Thistle-Strum/what-is-climate-justice"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
             </div>
           </div>
 
-          <div class="secondProject"> 
-            <div class="secondProjectImg">
-              <img src="./assets/project2.png" alt="The Restaurant Mall project displayed on several devices">
+          <div class="thirdProject"> 
+            <div class="thirdProjectImg">
+              <img src="./assets/giphy-sentiment.png" alt="The Restaurant Mall project displayed on a laptop">
             </div>   
-            <div class="text2">                  
-              <h3>The Restaurant Mall</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur excepturi quaerat adipisci ipsam, iusto harum natus animi, mollitia iure, officia reprehenderit rerum sit sapiente atis. </p>
-              <div class="buttons2">
-                <a href="https://tranquil-kleicha-7a958f.netlify.app" target="_blank" rel="noopener"><button>Live</button></a> 
-                <a href="https://github.com/Thistle-Strum/project01"  target="_blank" rel="noopener"><button>Repo</button></a> 
+            <div class="text3">                  
+              <h3>Giphy Sentiment</h3>
+              <p>A React application which retrieves and displays data from the Giphy API based on the submission of a term which reflects the user's emotional state.  The user then is presented with a gallery of gifs to select from.  The user's selection is displayed in another gallery via React Router with the user's search term and date of selection.</p>
+              <div class="buttons3">
+                <a href="https://giphy-sentiment-39.netlify.app/" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/kwzhang62/project-4-giphy-sentiment"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
             </div>
           </div>
 
-          <div class="thirdProject">
-            <div class="thirdProjectImg">
-              <img src="./assets/project3.png" alt="The Wayback Machine project on several devices">
+          <div class="fourthProject">
+            <div class="fourthProjectImg">
+              <img src="./assets/the-restaurant-mall.png" alt="The Restaurant Mall on a laptop">
             </div>
-            <div class="text3">               
-              <h3>Bikerland</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur excepturi quaerat adipisci ipsam, iusto harum natus animi, mollitia iure, officia reprehenderit rerum sit sapiente atis. 
+            <div class="text4">               
+              <h3>The Restaurant Mall</h3>
+              <p>A multi-page PSD conversion project highlighting responsive design and interactive features.  The conversion project adheres to a style guide requirements and utilizes SASS partials for CSS organization and implementation. 
               </p>
-              <div class="buttons3">
-                <a href="https://confident-wilson-63c9b1.netlify.app/"  target="_blank" rel="noopener"><button>Live</button></a> 
-                <a href="https://github.com/Thistle-Strum/Bikerland"  target="_blank" rel="noopener"><button>Repo</button></a> 
+              <div class="buttons4">
+                <a href="https://restaurant-mall-project1.netlify.app" target="_blank" rel="noopener"><button>Live</button></a> 
+                <a href="https://github.com/Thistle-Strum/project01"  target="_blank" rel="noopener"><button>Repo</button></a> 
               </div>
-            </div> 
+            </div>     
           </div>
         </div>
       </div>
@@ -5886,7 +5899,8 @@
     </section>
   </main>
   <footer class="footer">
-    <p>Developed by David Benitez 2022</p>
+    <p>Header Portrait by Cassie Norton</p>
+    <p>Developed and Designed by David Benitez 2022</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js" integrity="sha512-gK8OnTXn8cTYkHqYX+bhzjQ1rClAPuG2eMy+oRuV26mSuE0EbZeULFKdyc/YGX1Z/JsC06FXxQttdX4aahjSMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
   <script src="script.js"></script>
