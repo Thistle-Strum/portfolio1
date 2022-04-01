@@ -1,6 +1,9 @@
 
 @media (max-width: 1025px) {
     button {
+        text-align: center !important;
+        text-align: -moz-center !important;
+        text-align: -webkit-center !important;
         padding: 5px 8px 0 8px;
         width: 67px;
         font-size: 19px;
@@ -218,7 +221,7 @@
 @media (max-width: 530px) {
 
     header {
-        min-height: 75vh;
+        min-height: 85vh;
     }
 
     .svgContainer h2 {
