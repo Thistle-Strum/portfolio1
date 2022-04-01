@@ -719,7 +719,7 @@ button {
 .projectsContainer .text3,
 .projectsContainer .text4 {
     max-width: 80vw;
-    padding: 3% 0 0 0;
+    padding: 3% 0px 0px 0px;
   }
   .projectsContainer .text1 h3,
 .projectsContainer .text1 .buttons1,
@@ -741,7 +741,9 @@ button {
 .projectsContainer .text4 .buttons2,
 .projectsContainer .text4 .buttons3,
 .projectsContainer .text4 .buttons4 {
-    text-align: center;
+    text-align: center !important;
+    text-align: -moz-center !important;
+    text-align: -webkit-center !important;
   }
   .projectsContainer .text1 p,
 .projectsContainer .text2 p,
@@ -930,6 +932,10 @@ button {
   }
 }
 @media (max-width: 530px) {
+  header {
+    min-height: 75vh;
+  }
+
   .svgContainer h2 {
     position: absolute;
     font-size: 1.5rem;

@@ -19,13 +19,15 @@
         .text3,
         .text4 {
             max-width: 80vw;
-            padding: 3% 0 0 0;
+            padding: 3% 0px 0px 0px;
             h3,
             .buttons1,
             .buttons2,
             .buttons3,
             .buttons4 {
-                text-align: center;
+                text-align: center !important;
+                text-align: -moz-center !important;
+                text-align: -webkit-center !important;
             }
             p {
                 text-align: left;
@@ -214,6 +216,11 @@
 }
 
 @media (max-width: 530px) {
+
+    header {
+        min-height: 75vh;
+    }
+
     .svgContainer h2 {
         position: absolute;
         font-size: 1.5rem;
