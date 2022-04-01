@@ -8,20 +8,23 @@
     .projectsContainer {
         .firstProject,
         .secondProject,
-        .thirdProject {
+        .thirdProject,
+        .fourthProject {
             flex-direction: column;
             align-items: center;
             margin-top: 5%;
         }
         .text1,
         .text2,
-        .text3 {
+        .text3,
+        .text4 {
             max-width: 80vw;
             padding: 3% 0 0 0;
             h3,
             .buttons1,
             .buttons2,
-            .buttons3 {
+            .buttons3,
+            .buttons4 {
                 text-align: center;
             }
             p {
@@ -229,7 +232,8 @@
     }
     .firstProject .firstProjectImg,
     .secondProject .secondProjectImg,
-    .thirdProject .thirdProjectImg {
+    .thirdProject .thirdProjectImg,
+    .fourthProject .fourthProjectImg {
         width: 310px;
     }
 }
@@ -251,9 +255,10 @@
 
 }
 
-    .firstProject .firstProjectImg,
-    .secondProject .secondProjectImg,
-    .thirdProject .thirdProjectImg {
+.firstProject .firstProjectImg,
+.secondProject .secondProjectImg,
+.thirdProject .thirdProjectImg
+.fourthProject .fourthProjectImg {
         img {
             box-shadow: 0 0;
         }

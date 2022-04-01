@@ -495,7 +495,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 370px;
 }
 .firstProject .firstProjectImg img {
   box-shadow: 5px 5px gray;
@@ -708,14 +708,16 @@ button {
 
   .projectsContainer .firstProject,
 .projectsContainer .secondProject,
-.projectsContainer .thirdProject {
+.projectsContainer .thirdProject,
+.projectsContainer .fourthProject {
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
   }
   .projectsContainer .text1,
 .projectsContainer .text2,
-.projectsContainer .text3 {
+.projectsContainer .text3,
+.projectsContainer .text4 {
     max-width: 80vw;
     padding: 3% 0 0 0;
   }
@@ -723,19 +725,28 @@ button {
 .projectsContainer .text1 .buttons1,
 .projectsContainer .text1 .buttons2,
 .projectsContainer .text1 .buttons3,
+.projectsContainer .text1 .buttons4,
 .projectsContainer .text2 h3,
 .projectsContainer .text2 .buttons1,
 .projectsContainer .text2 .buttons2,
 .projectsContainer .text2 .buttons3,
+.projectsContainer .text2 .buttons4,
 .projectsContainer .text3 h3,
 .projectsContainer .text3 .buttons1,
 .projectsContainer .text3 .buttons2,
-.projectsContainer .text3 .buttons3 {
+.projectsContainer .text3 .buttons3,
+.projectsContainer .text3 .buttons4,
+.projectsContainer .text4 h3,
+.projectsContainer .text4 .buttons1,
+.projectsContainer .text4 .buttons2,
+.projectsContainer .text4 .buttons3,
+.projectsContainer .text4 .buttons4 {
     text-align: center;
   }
   .projectsContainer .text1 p,
 .projectsContainer .text2 p,
-.projectsContainer .text3 p {
+.projectsContainer .text3 p,
+.projectsContainer .text4 p {
     text-align: left;
   }
 }
@@ -937,7 +948,8 @@ button {
 
   .firstProject .firstProjectImg,
 .secondProject .secondProjectImg,
-.thirdProject .thirdProjectImg {
+.thirdProject .thirdProjectImg,
+.fourthProject .fourthProjectImg {
     width: 310px;
   }
 }
@@ -953,7 +965,7 @@ button {
 
   .firstProject .firstProjectImg img,
 .secondProject .secondProjectImg img,
-.thirdProject .thirdProjectImg img {
+.thirdProject .thirdProjectImg .fourthProject .fourthProjectImg img {
     box-shadow: 0 0;
   }
 
