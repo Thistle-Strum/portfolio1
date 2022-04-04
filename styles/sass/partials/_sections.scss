@@ -20,11 +20,12 @@
         }
     }
 // ***********************************************
+
 .skillsContainer {
-    background-image: url('../assets/grass.png');
+    // background-image: url('../assets/grass.png');
+    background-color: #EAEAEA;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50%;
     padding: 5% 0 10% 0;
     h3{
         text-align: center;
@@ -34,15 +35,17 @@
     .libraries,
     .databases,
     .workflow {
-        color: white;
+        color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
         text-align: center;
-        border-radius: 10px;
+        // border-radius: 10px;
         border: 2px black solid;
-        background-color: rgba(63,115,47,0.7);
+        background-color: white;
         padding-top: 10px;
     }
     .progLangs .lispIcon {
@@ -87,7 +90,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 370px;
+        width: 400px;
         img {
             box-shadow: 5px 5px gray;
             border: 2px gray solid;

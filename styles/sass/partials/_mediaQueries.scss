@@ -30,8 +30,7 @@
             .buttons4 {
                 text-align: center !important;
                 text-align: -moz-center !important;
-                text-align: -webkit-center !important;
-                
+                text-align: -webkit-center !important; 
             }
             p {
                 text-align: left;
@@ -65,7 +64,7 @@
 
     .menuButton:hover,
     .menuButton:focus {
-        border: salmon solid 2px;
+        border: rgb(209, 114, 250) solid 2px;
         // transition: border 0.5s ease-in-out;
     }
 
@@ -174,12 +173,18 @@
             // margin-top: 25%;
             margin-top: 15%;
         }
-    
         #about .wrapper,
         #skills .wrapper,
         .projectsContainer .wrapper,
         #contact .wrapper {
             width: 90%;
+        }
+        .skillsContainer .frontEnd,
+        .skillsContainer .progLangs,
+        .skillsContainer .libraries,
+        .skillsContainer .databases,
+        .skillsContainer .workflow {
+            width: 100%;
         }
     }
 
