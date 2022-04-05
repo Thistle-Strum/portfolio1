@@ -235,6 +235,10 @@ html {
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 85%;
@@ -455,6 +459,10 @@ header {
   text-align: left;
   padding: 0 5%;
 }
+.aboutContainer p span {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
 .skillsContainer {
   background-color: #EAEAEA;
@@ -527,16 +535,20 @@ header {
   width: 400px;
 }
 .firstProject .firstProjectImg img {
-  box-shadow: 5px 5px gray;
-  border: 2px gray solid;
+  box-shadow: 5px 5px #9D9A9A;
+  border: 2px #9D9A9A solid;
   border-radius: 20px;
 }
 .firstProject .text1 {
   max-width: 50vw;
   padding-left: 40px;
 }
+.firstProject .text1 h3 {
+  text-align: center;
+}
 .firstProject .text1 p {
   font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 
 .secondProject {
@@ -552,16 +564,20 @@ header {
   width: 400px;
 }
 .secondProject .secondProjectImg img {
-  box-shadow: 5px 5px gray;
-  border: 2px gray solid;
+  box-shadow: 5px 5px #9D9A9A;
+  border: 2px #9D9A9A solid;
   border-radius: 20px;
 }
 .secondProject .text2 {
   max-width: 50vw;
   padding-left: 40px;
 }
+.secondProject .text2 h3 {
+  text-align: center;
+}
 .secondProject .text2 p {
   font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 
 .thirdProject {
@@ -577,16 +593,20 @@ header {
   width: 400px;
 }
 .thirdProject .thirdProjectImg img {
-  box-shadow: 5px 5px gray;
-  border: 2px gray solid;
+  box-shadow: 5px 5px #9D9A9A;
+  border: 2px #9D9A9A solid;
   border-radius: 20px;
 }
 .thirdProject .text3 {
   max-width: 50vw;
   padding-left: 40px;
 }
+.thirdProject .text3 h3 {
+  text-align: center;
+}
 .thirdProject .text3 p {
   font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 
 .fourthProject {
@@ -601,114 +621,74 @@ header {
   width: 400px;
 }
 .fourthProject .fourthProjectImg img {
-  box-shadow: 5px 5px gray;
-  border: 2px gray solid;
+  box-shadow: 5px 5px #9D9A9A;
+  border: 2px #9D9A9A solid;
   border-radius: 20px;
 }
 .fourthProject .text4 {
   max-width: 50vw;
   padding-left: 40px;
 }
+.fourthProject .text4 h3 {
+  text-align: center;
+}
 .fourthProject .text4 p {
   font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 
-button {
-  font-size: 0.85rem;
+.projectButtons {
+  text-align: center;
+}
+.projectButtons button {
+  font-size: 0.75rem;
   padding: 1px 6px 0 6px;
-  margin-top: 3%;
+  margin-top: 4%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.projectButtons button a {
+  color: black;
+  font-size: 0.95rem;
 }
 
 .contactContainer {
   padding-top: 10%;
 }
-.contactContainer .contactForm form {
-  background-color: rgb(201, 112, 112);
-  border: none;
-  border-radius: 20px 20px;
-  width: 75%;
-  margin: 0 auto 10% auto;
-  box-shadow: 10px 10px gray;
+.contactContainer h3 {
+  text-align: center;
 }
-.contactContainer fieldset {
-  border: none;
-  padding: 78px 50px 0 50px;
+.contactContainer .contact,
+.contactContainer .socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.contactContainer fieldset input {
-  color: white;
-  border-radius: 20px 20px;
-  background-color: rgb(34, 42, 54);
-  margin-bottom: 41px;
+.contactContainer .contact a,
+.contactContainer .socialIcons a {
+  color: black;
+  margin: 0 5px;
+  font-size: 0.75rem;
 }
-.contactContainer fieldset textarea {
-  color: white;
-  background-color: rgb(34, 42, 54);
-  height: 208px;
-  width: 100%;
-  border-radius: 20px 20px;
-  resize: none;
-  padding: 16px 0 0 24px;
+.contactContainer .contact a i,
+.contactContainer .socialIcons a i {
+  font-size: 1.5rem;
+  margin: 10px 5px;
 }
-.contactContainer fieldset input::-moz-placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  padding-left: 5px;
+.contactContainer .contact {
+  text-align: center;
+  margin-bottom: 10%;
 }
-.contactContainer fieldset input:-ms-input-placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  padding-left: 5px;
+.contactContainer .contact button {
+  font-size: 0.75rem;
+  padding: 1px 6px 0 6px;
+  margin-top: 4%;
+  border-radius: 20px;
+  margin: 0 auto;
 }
-.contactContainer fieldset input::placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  padding-left: 5px;
-}
-.contactContainer fieldset textarea::-moz-placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  -webkit-appearance: none;
-}
-.contactContainer fieldset textarea:-ms-input-placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  -webkit-appearance: none;
-}
-.contactContainer fieldset textarea::placeholder {
-  color: white;
-  background-color: transparent;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  letter-spacing: 1.3px;
-  -webkit-appearance: none;
-}
-.contactContainer fieldset input[type=text],
-.contactContainer fieldset input[type=email] {
-  padding: 13px 68px 9px 24px;
-}
-.contactContainer fieldset input[type=text] {
-  margin-right: 19px;
-}
-.contactContainer button {
-  font-weight: 400;
-  width: 100%;
-  padding-top: 3px;
-  margin: 40px 0;
+.contactContainer .contact button a {
+  color: black;
+  font-size: 0.95rem;
 }
 
 .footer {

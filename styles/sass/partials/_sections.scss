@@ -44,6 +44,10 @@
         p {
             text-align: left;
             padding: 0 5%;
+            span {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
         }
     }
 // ***********************************************
@@ -119,17 +123,20 @@
         align-items: center;
         width: 400px;
         img {
-            box-shadow: 5px 5px gray;
-            border: 2px gray solid;
+            box-shadow: 5px 5px #9D9A9A;
+            border: 2px #9D9A9A solid;
             border-radius: 20px;
         }
     }
     .text1 {
         max-width: 50vw;
         padding-left: 40px;
+        h3 {
+            text-align: center;
+        }
         p {
             font-size: 0.85rem;
-            
+            margin-bottom: 8px;
             }
         }
     }
@@ -145,16 +152,20 @@
         align-items: center;
         width: 400px;
         img {
-            box-shadow: 5px 5px gray;
-            border: 2px gray solid;
+            box-shadow: 5px 5px #9D9A9A;
+            border: 2px #9D9A9A solid;
             border-radius: 20px;
         }
     }
     .text2 {
         max-width: 50vw;
         padding-left: 40px;
+        h3 {
+            text-align: center;
+        }
         p {
             font-size: 0.85rem;
+            margin-bottom: 8px;
             }
         }
     }
@@ -170,16 +181,20 @@
         align-items: center;
         width: 400px;
         img {
-            box-shadow: 5px 5px gray;
-            border: 2px gray solid;
+            box-shadow: 5px 5px #9D9A9A;
+            border: 2px #9D9A9A solid;
             border-radius: 20px;
         }
     }
     .text3 {
         max-width: 50vw;
         padding-left: 40px;
+        h3 {
+            text-align: center;
+        }
         p {
             font-size: 0.85rem;
+            margin-bottom: 8px;
             }
         }
     }
@@ -193,25 +208,37 @@
             align-items: center;
             width: 400px;
             img {
-                box-shadow: 5px 5px gray;
-                border: 2px gray solid;
+                box-shadow: 5px 5px #9D9A9A;
+                border: 2px #9D9A9A solid;
                 border-radius: 20px;
             }
         }
         .text4 {
             max-width: 50vw;
             padding-left: 40px;
+            h3 {
+                text-align: center;
+            }
             p {
                 font-size: 0.85rem;
+                margin-bottom: 8px;
                 }
             }
         }
 
-    button {
-        font-size: 0.85rem;
+    .projectButtons {
+        text-align: center;
+        button {
+        font-size: 0.75rem;
         padding: 1px 6px 0 6px;
-        margin-top: 3%;
-        
+        margin-top: 4%;
+        border-radius: 20px;
+        margin: 0 auto;
+        a {
+            color: black;
+            font-size: 0.95rem;
+            }
+        }
     }
 
 
@@ -219,61 +246,40 @@
 
 .contactContainer {
     padding-top: 10%;
-    .contactForm form {
-        background-color: rgb(201, 112, 112);
-        border: none;
-        border-radius: 20px 20px;
-        width: 75%;
-        margin: 0 auto 10% auto;
-        box-shadow: 10px 10px gray;
+    h3 {
+        text-align: center;
     }
-    fieldset {
-        border: none;
-        padding: 78px 50px 0 50px;
-        input {
-            color: white;
-            border-radius: 20px 20px;
-            background-color: rgb(34, 42, 54);
-            margin-bottom: 41px;
+    .contact,
+    .socialIcons {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        a {
+        color: black;
+        margin: 0 5px;
+        font-size: .75rem;
+        i {
+            font-size: 1.5rem;
+            margin: 10px 5px;
+            }
+        }     
+    }
+    .contact {
+        text-align: center;
+        margin-bottom: 10%;
+        button {
+        font-size: 0.75rem;
+        padding: 1px 6px 0 6px;
+        margin-top: 4%;
+        border-radius: 20px;
+        margin: 0 auto ;
+        a {
+            color: black;
+            font-size: 0.95rem;
+            }
         }
-        textarea {
-            color: white;
-            background-color: rgb(34, 42, 54);
-            height: 208px;
-            width: 100%;
-            border-radius: 20px 20px;
-            resize: none;
-            padding: 16px 0 0 24px;
-        }
-        input::placeholder {
-            color: white;
-            background-color: transparent;
-            font-size: 0.7rem;
-            line-height: 0.9rem;
-            letter-spacing: 1.3px; 
-            padding-left: 5px;
-        }
-        textarea::placeholder  {
-            color: white;
-            background-color: transparent;
-            font-size: 0.7rem;
-            line-height: 0.9rem;
-            letter-spacing: 1.3px;
-            -webkit-appearance: none;
-        }
-        input[type="text"],
-        input[type="email"] {
-            padding: 13px 68px 9px 24px;
-        }
-        input[type="text"] {
-            margin-right: 19px;
-        }
-    }    
-    button {
-    font-weight: 400;
-    width: 100%;
-    padding-top: 3px;
-    margin: 40px 0;
+            
+        
     }
 }   
 

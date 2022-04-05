@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+html, body { overflow-x: hidden; }
+
 .wrapper {
     max-width: 1280px;
     width: 85%;

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contactForm form {
+        background-color: rgb(201, 112, 112);
+        border: none;
+        border-radius: 20px 20px;
+        width: 75%;
+        margin: 0 auto 10% auto;
+        box-shadow: 10px 10px hsl(0, 2%, 61%);
+    }
+    fieldset {
+        border: none;
+        padding: 78px 50px 0 50px;
+    }
+    input {
+        color: white;
+        border-radius: 20px 20px;
+        background-color: rgb(34, 42, 54);
+        margin-bottom: 41px;
+        }
+        textarea {
+            color: white;
+            background-color: rgb(34, 42, 54);
+            height: 208px;
+            width: 100%;
+            border-radius: 20px 20px;
+            resize: none;
+            padding: 16px 0 0 24px;
+        }
+        input::placeholder {
+            color: white;
+            background-color: transparent;
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            letter-spacing: 1.3px; 
+            padding-left: 5px;
+        }
+        textarea::placeholder  {
+            color: white;
+            background-color: transparent;
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            letter-spacing: 1.3px;
+            -webkit-appearance: none;
+        }
+        input[type="text"],
+        input[type="email"] {
+            padding: 13px 68px 9px 24px;
+        }
+        input[type="text"] {
+            margin-right: 19px;
+        }
+       
+    button {
+    font-weight: 400;
+    width: 100%;
+    padding-top: 3px;
+    margin: 40px 0;
+    }
+</style>
+<body>
+    <div class="contactForm">
+        <form action="">
+          <fieldset>
+            <label for="name" aria-hidden="true"></label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email" aria-hidden="true"></label>
+            <input type="email" id="email" name="email" placeholder="Email address">
+            <label for="message" aria-hidden="true"></label>
+            <textarea name="message" id="message" name="message" placeholder="Message"  cols="30" rows="10"></textarea> 
+            <button>Send</button>  
+          </fieldset>     
+</body>
+</html>
