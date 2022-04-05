@@ -1,10 +1,9 @@
-#about {
-    // border-radius: 50%;;
-    // background: linear-gradient(#e66465, #9198e5);
-}
+
 
 .aboutContainer {
         margin: 10% 0;
+        // background: linear-gradient(#e66465, #9198e5);
+        
         .shape {
             shape-outside: ellipse(100px 200px at 50% 50%);
             clip-path: ellipse(100px 200px at 50% 50%);
@@ -13,6 +12,34 @@
             float: left;
             margin-right: 3%;
             background-color: rgb(211, 156, 211);
+        }
+        .aboutImgs {
+            position: relative;
+            // margin-top: 123px;        
+            .aboutImg1,
+            .aboutImg2,
+            .aboutImg3,
+            .aboutImg4,
+            .aboutImg5 {
+                width: 100%;
+                // position: absolute;
+            }
+            .aboutImg1 {
+                z-index: 1;
+                padding: 20px
+            }
+            .aboutImg2 {
+                z-index: 0;  
+            }
+            .aboutImg3 {
+                z-index: 0;
+            }
+            .aboutImg4 {
+                z-index: 0;         
+            }
+            .aboutImg5 {
+                z-index: 0;
+            }
         }
         p {
             text-align: left;
@@ -40,10 +67,10 @@
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 50%;
+        width: 65%;
         margin: 0 auto;
         text-align: center;
-        // border-radius: 10px;
+        border-radius: 10px;
         border: 2px black solid;
         background-color: white;
         padding-top: 10px;
@@ -84,7 +111,7 @@
 .firstProject {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
     margin-bottom: 5%;
     .firstProjectImg {
         display: flex;

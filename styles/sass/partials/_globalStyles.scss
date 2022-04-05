@@ -48,12 +48,14 @@ a {
 img {
     display: block;
     width: 100%;
+   
 }
 
 
 
 li a:hover {
-    color: rgb(253, 128, 94);
+    color:  #51CB20;
+    transition:  ease  .5s;
   
 }
 

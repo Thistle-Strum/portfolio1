@@ -283,7 +283,8 @@ img {
 }
 
 li a:hover {
-  color: rgb(253, 128, 94);
+  color: #51CB20;
+  transition: ease 0.5s;
 }
 
 .menu-checkbox {
@@ -390,6 +391,7 @@ header {
 #signature {
   width: 585px;
   height: 75px;
+  margin-bottom: 5px;
 }
 
 #signature path {
@@ -423,6 +425,32 @@ header {
   margin-right: 3%;
   background-color: rgb(211, 156, 211);
 }
+.aboutContainer .aboutImgs {
+  position: relative;
+}
+.aboutContainer .aboutImgs .aboutImg1,
+.aboutContainer .aboutImgs .aboutImg2,
+.aboutContainer .aboutImgs .aboutImg3,
+.aboutContainer .aboutImgs .aboutImg4,
+.aboutContainer .aboutImgs .aboutImg5 {
+  width: 100%;
+}
+.aboutContainer .aboutImgs .aboutImg1 {
+  z-index: 1;
+  padding: 20px;
+}
+.aboutContainer .aboutImgs .aboutImg2 {
+  z-index: 0;
+}
+.aboutContainer .aboutImgs .aboutImg3 {
+  z-index: 0;
+}
+.aboutContainer .aboutImgs .aboutImg4 {
+  z-index: 0;
+}
+.aboutContainer .aboutImgs .aboutImg5 {
+  z-index: 0;
+}
 .aboutContainer p {
   text-align: left;
   padding: 0 5%;
@@ -447,9 +475,10 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
+  border-radius: 10px;
   border: 2px black solid;
   background-color: white;
   padding-top: 10px;
@@ -488,7 +517,7 @@ header {
 .firstProject {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 5%;
 }
 .firstProject .firstProjectImg {
