@@ -253,7 +253,7 @@ body {
   font-family: "Roboto Serif", sans-serif;
   line-height: 1.4rem;
   letter-spacing: 0.02rem;
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(220, 220, 220);
 }
 
 h2 {
@@ -419,53 +419,84 @@ header {
 .aboutContainer {
   margin: 10% 0;
 }
-.aboutContainer .shape {
-  shape-outside: ellipse(100px 200px at 50% 50%);
-  -webkit-clip-path: ellipse(100px 200px at 50% 50%);
-          clip-path: ellipse(100px 200px at 50% 50%);
-  width: 200px;
-  height: 400px;
+.aboutContainer .shape1 {
   float: left;
+  shape-outside: circle(50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   margin-right: 3%;
   background-color: rgb(211, 156, 211);
 }
 .aboutContainer .aboutImgs {
   position: relative;
 }
-.aboutContainer .aboutImgs .aboutImg1,
-.aboutContainer .aboutImgs .aboutImg2,
-.aboutContainer .aboutImgs .aboutImg3,
-.aboutContainer .aboutImgs .aboutImg4,
-.aboutContainer .aboutImgs .aboutImg5 {
+.aboutContainer .aboutImgs .keyboard {
   width: 100%;
+  position: absolute;
+  top: 33px;
+  right: 14px;
 }
-.aboutContainer .aboutImgs .aboutImg1 {
+.aboutContainer .aboutImgs2 {
+  height: 50vh;
+  position: relative;
+  left: 14%;
+  top: 11%;
+}
+.aboutContainer .aboutImgs2 .keyboard2 {
+  width: 65%;
   z-index: 1;
-  padding: 20px;
+  position: absolute;
 }
-.aboutContainer .aboutImgs .aboutImg2 {
-  z-index: 0;
+.aboutContainer .aboutImgs2 .piano2 {
+  z-index: 2;
+  width: 65%;
+  position: absolute;
 }
-.aboutContainer .aboutImgs .aboutImg3 {
-  z-index: 0;
-}
-.aboutContainer .aboutImgs .aboutImg4 {
-  z-index: 0;
-}
-.aboutContainer .aboutImgs .aboutImg5 {
-  z-index: 0;
-}
-.aboutContainer p {
-  text-align: left;
-  padding: 0 5%;
-}
-.aboutContainer p span {
-  font-size: 1.25rem;
+.aboutContainer h3 {
+  font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 5px;
+}
+.aboutContainer .aboutParagraph1 {
+  text-align: left;
+}
+.aboutContainer .aboutParagraph1 .shape2 {
+  float: right;
+  shape-outside: circle(50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(156, 211, 187);
+  margin: 1% 0 0 3%;
+  position: relative;
+}
+.aboutContainer .aboutParagraph1 .shape2 img {
+  width: 100%;
+  position: absolute;
+  top: 43px;
+  left: 4px;
+}
+.aboutContainer .aboutParagraph1 .aboutParagraph2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+}
+.aboutContainer .aboutParagraph1 a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 20px;
+}
+.aboutContainer .aboutParagraph1 a:hover {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  padding: 5px 11px 5px 9px;
+  transition: ease-in-out 0.5s;
+  border: black 2px solid;
 }
 
 .skillsContainer {
-  background-color: #EAEAEA;
+  background-color: rgb(220, 220, 220);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5% 0 10% 0;
@@ -642,7 +673,7 @@ header {
 }
 .projectButtons button {
   font-size: 0.75rem;
-  padding: 1px 6px 0 6px;
+  padding: 2px 8px 0 8px;
   margin-top: 4%;
   border-radius: 20px;
   margin: 0 auto;
@@ -658,11 +689,20 @@ header {
 .contactContainer h3 {
   text-align: center;
 }
+.contactContainer p {
+  text-align: center;
+  padding: 0 10%;
+  margin-bottom: 12px;
+}
+.contactContainer a {
+  color: rgb(156, 211, 187);
+}
 .contactContainer .contact,
 .contactContainer .socialIcons {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 12px;
 }
 .contactContainer .contact a,
 .contactContainer .socialIcons a {
@@ -675,16 +715,26 @@ header {
   font-size: 1.5rem;
   margin: 10px 5px;
 }
+.contactContainer .contact a i:hover,
+.contactContainer .socialIcons a i:hover {
+  color: rgb(211, 156, 211);
+  transition: 0.5 ease-in-out;
+}
 .contactContainer .contact {
   text-align: center;
   margin-bottom: 10%;
 }
 .contactContainer .contact button {
   font-size: 0.75rem;
-  padding: 1px 6px 0 6px;
+  padding: 2px 8px 0 8px;
   margin-top: 4%;
   border-radius: 20px;
   margin: 0 auto;
+}
+.contactContainer .contact button:hover {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  transition: ease-in-out 0.5s;
+  border: 2px solid black;
 }
 .contactContainer .contact button a {
   color: black;
@@ -692,11 +742,12 @@ header {
 }
 
 .footer {
-  text-align: center;
   color: white;
+  text-align: center;
   background-color: rgb(34, 42, 54);
 }
 .footer p {
+  font-size: 0.75rem;
   padding: 8px 0 5px 0;
 }
 
