@@ -438,20 +438,22 @@ header {
   right: 14px;
 }
 .aboutContainer .aboutImgs2 {
-  height: 50vh;
+  display: block;
+  height: 100vh;
   position: relative;
-  left: 14%;
-  top: 11%;
+  right: 2%;
 }
 .aboutContainer .aboutImgs2 .keyboard2 {
-  width: 65%;
   z-index: 1;
   position: absolute;
+  top: 0;
+  right: 0;
 }
 .aboutContainer .aboutImgs2 .piano2 {
   z-index: 2;
-  width: 65%;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .aboutContainer h3 {
   font-size: 1.5rem;
@@ -482,17 +484,22 @@ header {
   font-weight: 400;
   text-align: right;
 }
-.aboutContainer .aboutParagraph1 a {
+.aboutContainer a {
+  display: inline-block;
   color: black;
   font-weight: 600;
   font-size: 1.05rem;
   border-radius: 20px;
+  margin-bottom: 50px;
+  padding: 0 5px;
+  border: transparent 1px solid;
+  position: relative;
+  right: 5px;
 }
-.aboutContainer .aboutParagraph1 a:hover {
+.aboutContainer a:hover {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
-  padding: 5px 11px 5px 9px;
   transition: ease-in-out 0.5s;
-  border: black 2px solid;
+  border: black 1px solid;
 }
 
 .skillsContainer {
@@ -566,20 +573,31 @@ header {
   width: 400px;
 }
 .firstProject .firstProjectImg img {
-  box-shadow: 5px 5px #9D9A9A;
+  box-shadow: 3px 3px #9D9A9A;
   border: 2px #9D9A9A solid;
   border-radius: 20px;
+}
+.firstProject .firstProjectImg img:hover {
+  transition: ease-in-out 0.5s;
+  border: 2px solid black;
+  box-shadow: 7px 7px rgb(40, 40, 40);
 }
 .firstProject .text1 {
   max-width: 50vw;
   padding-left: 40px;
 }
 .firstProject .text1 h3 {
+  font-size: 1.5rem;
   text-align: center;
+}
+.firstProject .text1 h4 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .firstProject .text1 p {
   font-size: 0.85rem;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .secondProject {
@@ -595,20 +613,31 @@ header {
   width: 400px;
 }
 .secondProject .secondProjectImg img {
-  box-shadow: 5px 5px #9D9A9A;
+  box-shadow: 3px 3px #9D9A9A;
   border: 2px #9D9A9A solid;
   border-radius: 20px;
+}
+.secondProject .secondProjectImg img:hover {
+  transition: ease-in-out 0.5s;
+  border: 2px solid black;
+  box-shadow: 7px 7px rgb(40, 40, 40);
 }
 .secondProject .text2 {
   max-width: 50vw;
   padding-left: 40px;
 }
 .secondProject .text2 h3 {
+  font-size: 1.5rem;
   text-align: center;
+}
+.secondProject .text2 h4 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .secondProject .text2 p {
   font-size: 0.85rem;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .thirdProject {
@@ -624,20 +653,31 @@ header {
   width: 400px;
 }
 .thirdProject .thirdProjectImg img {
-  box-shadow: 5px 5px #9D9A9A;
+  box-shadow: 3px 3px #9D9A9A;
   border: 2px #9D9A9A solid;
   border-radius: 20px;
+}
+.thirdProject .thirdProjectImg img:hover {
+  transition: ease-in-out 0.5s;
+  border: 2px solid black;
+  box-shadow: 7px 7px rgb(40, 40, 40);
 }
 .thirdProject .text3 {
   max-width: 50vw;
   padding-left: 40px;
 }
 .thirdProject .text3 h3 {
+  font-size: 1.5rem;
   text-align: center;
+}
+.thirdProject .text3 h4 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .thirdProject .text3 p {
   font-size: 0.85rem;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .fourthProject {
@@ -652,20 +692,31 @@ header {
   width: 400px;
 }
 .fourthProject .fourthProjectImg img {
-  box-shadow: 5px 5px #9D9A9A;
+  box-shadow: 3px 3px #9D9A9A;
   border: 2px #9D9A9A solid;
   border-radius: 20px;
+}
+.fourthProject .fourthProjectImg img:hover {
+  transition: ease-in-out 0.5s;
+  border: 2px solid black;
+  box-shadow: 7px 7px rgb(40, 40, 40);
 }
 .fourthProject .text4 {
   max-width: 50vw;
   padding-left: 40px;
 }
 .fourthProject .text4 h3 {
+  font-size: 1.5rem;
   text-align: center;
+}
+.fourthProject .text4 h4 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .fourthProject .text4 p {
   font-size: 0.85rem;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .projectButtons {
@@ -673,14 +724,20 @@ header {
 }
 .projectButtons button {
   font-size: 0.75rem;
-  padding: 2px 8px 0 8px;
-  margin-top: 4%;
+  padding: 2px 10px 0 10px;
   border-radius: 20px;
   margin: 0 auto;
+  border: 1px solid transparent;
+}
+.projectButtons button:hover {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  transition: ease-in-out 0.5s;
+  border: 1px solid black;
 }
 .projectButtons button a {
   color: black;
   font-size: 0.95rem;
+  padding: 0 7px;
 }
 
 .contactContainer {
@@ -695,7 +752,11 @@ header {
   margin-bottom: 12px;
 }
 .contactContainer a {
-  color: rgb(156, 211, 187);
+  color: rgb(82, 166, 142);
+}
+.contactContainer a:hover {
+  color: rgb(103, 18, 74);
+  transition: 0.5 ease-in-out;
 }
 .contactContainer .contact,
 .contactContainer .socialIcons {
@@ -717,7 +778,7 @@ header {
 }
 .contactContainer .contact a i:hover,
 .contactContainer .socialIcons a i:hover {
-  color: rgb(211, 156, 211);
+  color: rgb(186, 156, 211);
   transition: 0.5 ease-in-out;
 }
 .contactContainer .contact {
@@ -729,12 +790,13 @@ header {
   padding: 2px 8px 0 8px;
   margin-top: 4%;
   border-radius: 20px;
-  margin: 0 auto;
+  margin: 0 5px;
+  border: 1px solid transparent;
 }
 .contactContainer .contact button:hover {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
   transition: ease-in-out 0.5s;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .contactContainer .contact button a {
   color: black;

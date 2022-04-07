@@ -10,7 +10,7 @@ $(document).ready(function() {
    
     let pulse = window.setInterval(function() {
     const indexNumber = $(".aboutImgs2").children().length;
-      console.log(indexNumber)
+      // 
     let indexArray = [];
     for (i = indexNumber; i >= 1; i--) {
         indexArray.push(i);
@@ -25,7 +25,7 @@ $(document).ready(function() {
     // $(".aboutImg5").css("z-index", indexArray[4]).fadeOut(1000).next(900).fadeIn(4000);
     // $(".aboutImg6").css("z-index", indexArray[5]).fadeOut(4000).next(1000).fadeIn(1000);
     
-    }, 500);
+    }, 200);
 
 });
    
@@ -37,27 +37,63 @@ menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('open');
 });
 
-const toolsArray = ['.webDevelopment', '.programmingLanguages', '.frameworks', '.databasesAndApis', '.workFlow']
 
-document.onmouseover=function(event) {
-  let element = document.getElementsByClassName(event.target.className)
+// returns class name as a string
+// toolsContainer = document.getElementsByClassName('tools')[0]
+//                 .className.split(' ')[1]
+// console.log(toolsContainer)
+
+// toolsArray.map( item => {
+  //     if(element[0].className === item.replace(/^./, '')) {
+  //       let nextSibling = `.${element[0].nextElementSibling.className}`
+
+  // let toolsContainer = document.getElementsByClassName('.frontEnd .progLangs .libraries .databases .workflow');
+
+  const toolsContainer = document.querySelectorAll('.tools');
+
+  let timeout = false;
+
+document.addEventListener('scroll', function () {
+  
+  if (timeout) {
+    clearTimeout(timeout); 
+    timeout = false;
+  } else {
+    toolsContainer.forEach( toolContainer => {
+    toolContainer.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
+    toolContainer.style.transition = 'ease-in-out  .5s';
+    
+    timeout = setTimeout( function () {
+      toolContainer.style.backgroundColor = 'white';
+      }, 20000); 
+  
+      });
+    }
+  }); 
+
+
+      
+
+
+      // const toolsArray = ['.webDevelopment', '.programmingLanguages', '.frameworks', '.databasesAndApis', '.workFlow']
+ 
+// document.onmouseover = function(event) {
+//   let element = document.getElementsByClassName(event.target.className)
 
   // console.log(element[0].className === toolsObject[0].replace(/^./, ''))
 
-  toolsArray.map( item => {
-    if(element[0].className === item.replace(/^./, '')) {
-      let nextSibling = `.${element[0].nextElementSibling.className}`
-      document.querySelector(nextSibling).style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
-      document.querySelector(nextSibling).style.transition = 'ease-in-out  .5s';
+//   toolsArray.map( item => {
+//     if(element[0].className === item.replace(/^./, '')) {
+//       let nextSibling = `.${element[0].nextElementSibling.className}`
+//       document.querySelector(nextSibling).style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
+//       document.querySelector(nextSibling).style.transition = 'ease-in-out  .5s';
 
-      setTimeout(function() {
-        document.querySelector(nextSibling).style.backgroundColor = 'white';
-        }, 5000);
-
-      }
-    });
-}
- 
+//       setTimeout(function() {
+//         document.querySelector(nextSibling).style.backgroundColor = 'white';
+//         }, 5000);
+//       }
+//     });
+// }
 
 
 // toolsObject.addEventListener('mouseover', function() {
