@@ -728,7 +728,7 @@ header {
   padding: 6px 10px 2px 10px;
   border-radius: 20px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .projectButtons .button:hover {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
@@ -775,6 +775,7 @@ header {
 }
 .contactContainer .contact a i,
 .contactContainer .socialIcons a i {
+  color: rgb(34, 42, 54);
   font-size: 1.5rem;
   margin: 10px 5px;
 }
@@ -788,16 +789,18 @@ header {
   margin-bottom: 10%;
 }
 .contactContainer .contact .contactButton {
-  background-color: white;
+  color: white;
+  background-color: rgb(34, 42, 54);
   font-size: 0.95rem;
   font-weight: 400;
-  padding: 6px 10px 2px 10px;
+  padding: 7px 15px 2px 15px;
   margin-top: 4%;
   border-radius: 20px;
   margin: 0 5px;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 .contactContainer .contact .contactButton:hover {
+  color: black;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
   transition: ease-in-out 0.5s;
   border: 1px solid black;
