@@ -275,7 +275,6 @@ ul {
 }
 
 a {
-  font-size: clamp(0.5rem, 2vw, 3rem);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -439,7 +438,7 @@ header {
 }
 .aboutContainer .aboutImgs2 {
   display: block;
-  height: 100vh;
+  height: 600px;
   position: relative;
   right: 2%;
 }
@@ -722,19 +721,21 @@ header {
 .projectButtons {
   text-align: center;
 }
-.projectButtons button {
-  font-size: 0.75rem;
-  padding: 2px 10px 0 10px;
+.projectButtons .button {
+  color: black;
+  background: white;
+  font-size: 0.95rem;
+  padding: 6px 10px 2px 10px;
   border-radius: 20px;
   margin: 0 auto;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
-.projectButtons button:hover {
+.projectButtons .button:hover {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
   transition: ease-in-out 0.5s;
   border: 1px solid black;
 }
-.projectButtons button a {
+.projectButtons .button a {
   color: black;
   font-size: 0.95rem;
   padding: 0 7px;
@@ -752,10 +753,11 @@ header {
   margin-bottom: 12px;
 }
 .contactContainer a {
-  color: rgb(82, 166, 142);
+  color: black;
+  font-weight: 600;
 }
 .contactContainer a:hover {
-  color: rgb(103, 18, 74);
+  color: rgb(169, 34, 124);
   transition: 0.5 ease-in-out;
 }
 .contactContainer .contact,
@@ -778,27 +780,29 @@ header {
 }
 .contactContainer .contact a i:hover,
 .contactContainer .socialIcons a i:hover {
-  color: rgb(186, 156, 211);
+  color: rgb(169, 34, 124);
   transition: 0.5 ease-in-out;
 }
 .contactContainer .contact {
   text-align: center;
   margin-bottom: 10%;
 }
-.contactContainer .contact button {
-  font-size: 0.75rem;
-  padding: 2px 8px 0 8px;
+.contactContainer .contact .contactButton {
+  background-color: white;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 6px 10px 2px 10px;
   margin-top: 4%;
   border-radius: 20px;
   margin: 0 5px;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
-.contactContainer .contact button:hover {
+.contactContainer .contact .contactButton:hover {
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
   transition: ease-in-out 0.5s;
   border: 1px solid black;
 }
-.contactContainer .contact button a {
+.contactContainer .contact .contactButton a {
   color: black;
   font-size: 0.95rem;
 }
@@ -822,15 +826,6 @@ header {
 }
 
 @media (max-width: 1025px) {
-  button {
-    text-align: center !important;
-    text-align: -moz-center !important;
-    text-align: -webkit-center !important;
-    padding: 5px 8px 0 8px;
-    width: 67px;
-    font-size: 19px;
-  }
-
   .projectsContainer .firstProject,
 .projectsContainer .secondProject,
 .projectsContainer .thirdProject,
@@ -891,6 +886,16 @@ header {
     right: -500px;
     transition: all 5s ease-in-out;
     margin: 0;
+  }
+  .navContainer li a {
+    color: black;
+    font-size: 0.85rem;
+  }
+  .navContainer li a:hover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px 10px 2px 10px;
   }
 
   nav .menuToggle {
@@ -970,7 +975,7 @@ header {
     flex-direction: column;
     align-items: center;
     border-left: salmon solid 7px;
-    background-color: rgb(103, 204, 240);
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
     width: 60vw;
     height: 225px;
     padding: 75px 0px 0px 24%;
@@ -983,28 +988,27 @@ header {
   }
   .menu-checkbox:checked + .navContainer li:nth-child(1) {
     position: relative;
-    right: 57%;
+    right: 83%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(2) {
     position: relative;
-    right: 45%;
+    right: 53%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(3) {
     position: relative;
-    right: 33%;
+    right: 19%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(4) {
     position: relative;
-    right: 16%;
+    right: -17%;
     top: -28%;
   }
-  .menu-checkbox:checked + .navContainer li:nth-child(5) {
-    position: relative;
-    right: 0%;
-    top: -28%;
+
+  .aboutContainer .aboutImgs2 {
+    height: 450px;
   }
 
   .svgContainer {
@@ -1075,6 +1079,17 @@ header {
     top: 99%;
   }
 
+  .aboutContainer .aboutImgs2 {
+    height: 350px;
+  }
+
+  .firstProject .firstProjectImg,
+.secondProject .secondProjectImg,
+.thirdProject .thirdProjectImg,
+.fourthProject .fourthProjectImg {
+    margin-bottom: 10px;
+  }
+
   .contactContainer .contactForm form {
     width: 100%;
   }
@@ -1085,11 +1100,57 @@ header {
     top: 98%;
   }
 
+  .menu-checkbox:checked + .navContainer li:nth-child(1) {
+    position: relative;
+    right: 76%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(2) {
+    position: relative;
+    right: 53%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(3) {
+    position: relative;
+    right: 23%;
+    top: -28%;
+  }
+  .menu-checkbox:checked + .navContainer li:nth-child(4) {
+    position: relative;
+    right: -6%;
+    top: -28%;
+  }
+
   .firstProject .firstProjectImg,
 .secondProject .secondProjectImg,
 .thirdProject .thirdProjectImg,
 .fourthProject .fourthProjectImg {
     width: 310px;
+  }
+
+  .aboutContainer .shape1 {
+    width: 200px;
+    height: 200px;
+  }
+  .aboutContainer .aboutImgs .keyboard {
+    right: 10px;
+  }
+  .aboutContainer .aboutParagraph1 .shape2 {
+    width: 200px;
+    height: 200px;
+  }
+  .aboutContainer a {
+    margin-bottom: 0px;
+  }
+  .aboutContainer .aboutImgs2 {
+    height: 275px;
+  }
+
+  .projectsContainer .firstProject,
+.projectsContainer .secondProject,
+.projectsContainer .thirdProject,
+.projectsContainer .fourthProject {
+    margin-top: 10%;
   }
 }
 @media (max-width: 410px) {

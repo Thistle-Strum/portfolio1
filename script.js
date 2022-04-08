@@ -32,6 +32,7 @@ $(document).ready(function() {
     
 
 const menuButton = document.querySelector('.menuButton')
+
 let menuOpen = false;
 menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('open');
@@ -63,9 +64,9 @@ document.addEventListener('scroll', function () {
     toolContainer.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
     toolContainer.style.transition = 'ease-in-out  .5s';
     
-    timeout = setTimeout( function () {
-      toolContainer.style.backgroundColor = 'white';
-      }, 20000); 
+    // timeout = setTimeout( function () {
+    //   toolContainer.style.backgroundColor = 'white';
+    //   }, 20000); 
   
       });
     }
