@@ -826,6 +826,10 @@ header {
 }
 
 @media (max-width: 1025px) {
+  .aboutContainer .aboutImgs2 {
+    height: 550px;
+  }
+
   .projectsContainer .firstProject,
 .projectsContainer .secondProject,
 .projectsContainer .thirdProject,
@@ -840,30 +844,6 @@ header {
 .projectsContainer .text4 {
     max-width: 80vw;
     padding: 3% 0px 0px 0px;
-  }
-  .projectsContainer .text1 h3,
-.projectsContainer .text1 .buttons1,
-.projectsContainer .text1 .buttons2,
-.projectsContainer .text1 .buttons3,
-.projectsContainer .text1 .buttons4,
-.projectsContainer .text2 h3,
-.projectsContainer .text2 .buttons1,
-.projectsContainer .text2 .buttons2,
-.projectsContainer .text2 .buttons3,
-.projectsContainer .text2 .buttons4,
-.projectsContainer .text3 h3,
-.projectsContainer .text3 .buttons1,
-.projectsContainer .text3 .buttons2,
-.projectsContainer .text3 .buttons3,
-.projectsContainer .text3 .buttons4,
-.projectsContainer .text4 h3,
-.projectsContainer .text4 .buttons1,
-.projectsContainer .text4 .buttons2,
-.projectsContainer .text4 .buttons3,
-.projectsContainer .text4 .buttons4 {
-    text-align: center !important;
-    text-align: -moz-center !important;
-    text-align: -webkit-center !important;
   }
   .projectsContainer .text1 p,
 .projectsContainer .text2 p,
@@ -993,12 +973,12 @@ header {
   }
   .menu-checkbox:checked + .navContainer li:nth-child(2) {
     position: relative;
-    right: 53%;
+    right: 55%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(3) {
     position: relative;
-    right: 19%;
+    right: 21%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(4) {
@@ -1051,16 +1031,6 @@ header {
     top: -3%;
   }
 
-  .contactContainer .contactForm form {
-    margin-bottom: 10%;
-  }
-  .contactContainer .contactForm form fieldset {
-    padding: 7% 5% 5% 5%;
-  }
-  .contactContainer .contactForm form fieldset input[type=text] {
-    margin-right: 0;
-  }
-
   #about .wrapper,
 #skills .wrapper,
 .projectsContainer .wrapper,
@@ -1102,17 +1072,17 @@ header {
 
   .menu-checkbox:checked + .navContainer li:nth-child(1) {
     position: relative;
-    right: 76%;
+    right: 70%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(2) {
     position: relative;
-    right: 53%;
+    right: 55%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(3) {
     position: relative;
-    right: 23%;
+    right: 21%;
     top: -28%;
   }
   .menu-checkbox:checked + .navContainer li:nth-child(4) {
@@ -1154,13 +1124,54 @@ header {
   }
 }
 @media (max-width: 410px) {
+  body {
+    line-height: 1.2rem;
+  }
+
   .svgContainer h2 {
     font-size: 1rem;
     top: 94%;
   }
 
-  .aboutContainer .shape {
-    width: 0;
+  .aboutContainer .shape1 {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutContainer .aboutImgs .keyboard {
+    top: 15px;
+    right: 4px;
+  }
+  .aboutContainer h3 {
+    font-size: 1rem;
+  }
+  .aboutContainer p {
+    font-size: 0.85rem;
+  }
+  .aboutContainer .aboutParagraph1 .shape2 {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutContainer .aboutParagraph1 .shape2 img {
+    top: 19px;
+    left: 1px;
+  }
+  .aboutContainer .aboutParagraph1 .aboutParagraph2 {
+    font-size: 0.85rem;
+  }
+  .aboutContainer .aboutImgs2 {
+    height: 221px;
+  }
+
+  .skillsContainer .frontEnd li p:not(i),
+.skillsContainer .progLangs li p:not(i),
+.skillsContainer .libraries li p:not(i),
+.skillsContainer .databases li p:not(i),
+.skillsContainer .workflow li p:not(i) {
+    font-size: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
   }
 
   .firstProject .firstProjectImg img,
@@ -1169,11 +1180,46 @@ header {
     box-shadow: 0 0;
   }
 
-  .contactContainer .contactForm form {
-    box-shadow: 0 0;
+  .projectsContainer .text1 h3,
+.projectsContainer .text2 h3,
+.projectsContainer .text3 h3,
+.projectsContainer .text4 h3 {
+    font-size: 1.25rem;
   }
-  .contactContainer fieldset input[type=text],
-.contactContainer fieldset input[type=email] {
-    padding: 13px 14px 9px 24px;
+  .projectsContainer .text1 h4,
+.projectsContainer .text2 h4,
+.projectsContainer .text3 h4,
+.projectsContainer .text4 h4 {
+    font-size: 0.75rem;
+  }
+  .projectsContainer .text1 p,
+.projectsContainer .text2 p,
+.projectsContainer .text3 p,
+.projectsContainer .text4 p {
+    font-size: 0.75rem;
+  }
+  .projectsContainer .text1 .projectButtons a,
+.projectsContainer .text2 .projectButtons a,
+.projectsContainer .text3 .projectButtons a,
+.projectsContainer .text4 .projectButtons a {
+    font-size: 0.75rem;
+  }
+
+  .contactContainer h3 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+  }
+  .contactContainer h4 {
+    font-size: 0.75rem;
+  }
+  .contactContainer p {
+    font-size: 0.75rem;
+  }
+  .contactContainer .contact .contactButton {
+    font-size: 0.75rem;
+  }
+
+  .footer p {
+    font-size: 0.65rem;
   }
 }
