@@ -1,4 +1,9 @@
 
+@media (max-width: 1440px) {
+.aboutContainer .aboutImgs2 {
+    height: 650px;
+    }
+}
 @media (max-width: 1025px) {
     .aboutContainer .aboutImgs2 {
         height: 550px;
@@ -234,7 +239,6 @@
     .contactContainer .contactForm form {
         width: 100%
     }
-
 }
 
 @media (max-width: 450px) {

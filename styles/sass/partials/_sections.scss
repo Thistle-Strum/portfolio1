@@ -1,9 +1,7 @@
 
 
 .aboutContainer {
-        margin: 10% 0;
-        // background: linear-gradient(#e66465, #9198e5);
-        
+        margin: 10% 0;  
         .shape1 {
             float: left;
             shape-outside: circle(50%);
@@ -24,7 +22,7 @@
         }    
         .aboutImgs2 {
             display:block;
-            height: 600px;
+            height: 750px;
             position: relative;
             right: 2%;
             .keyboard2 {
@@ -93,7 +91,6 @@
 // ***********************************************
 
 .skillsContainer {
-    // background-image: url('../assets/grass.png');
     background-color: rgb(220, 220, 220);
     background-size: cover;
     background-repeat: no-repeat;

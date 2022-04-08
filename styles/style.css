@@ -286,7 +286,7 @@ img {
 }
 
 li a:hover {
-  color: #51CB20;
+  color: salmon;
   transition: ease 0.5s;
 }
 
@@ -438,7 +438,7 @@ header {
 }
 .aboutContainer .aboutImgs2 {
   display: block;
-  height: 600px;
+  height: 750px;
   position: relative;
   right: 2%;
 }
@@ -825,6 +825,11 @@ header {
   padding: 5% 0 0 0;
 }
 
+@media (max-width: 1440px) {
+  .aboutContainer .aboutImgs2 {
+    height: 650px;
+  }
+}
 @media (max-width: 1025px) {
   .aboutContainer .aboutImgs2 {
     height: 550px;
