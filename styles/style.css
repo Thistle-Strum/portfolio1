@@ -286,7 +286,7 @@ img {
 }
 
 li a:hover {
-  color: salmon;
+  color: #9CD3BB;
   transition: ease 0.5s;
 }
 
@@ -308,16 +308,16 @@ header {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate1 {
   0% {
-    background-color: rgb(65, 7, 60);
+    background-color: #321325;
   }
   20% {
-    background-color: rgb(103, 18, 74);
+    background-color: #5F0F40;
   }
   40% {
-    background-color: rgb(100, 33, 113);
+    background-color: #9a0351;
   }
   60% {
-    background-color: rgb(106, 43, 124);
+    background-color: rgb(70, 18, 103);
   }
   80% {
     background-color: rgb(124, 115, 158);
@@ -329,16 +329,16 @@ header {
 /* Standard syntax */
 @keyframes animate1 {
   0% {
-    background-color: rgb(65, 7, 60);
+    background-color: #321325;
   }
   20% {
-    background-color: rgb(103, 18, 74);
+    background-color: #5F0F40;
   }
   40% {
-    background-color: rgb(100, 33, 113);
+    background-color: #9a0351;
   }
   60% {
-    background-color: rgb(106, 43, 124);
+    background-color: rgb(70, 18, 103);
   }
   80% {
     background-color: rgb(124, 115, 158);
@@ -496,7 +496,7 @@ header {
   right: 5px;
 }
 .aboutContainer a:hover {
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  background: #9CD3BB;
   transition: ease-in-out 0.5s;
   border: black 1px solid;
 }
@@ -731,7 +731,7 @@ header {
   border: 1px solid transparent;
 }
 .projectButtons .button:hover {
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  background: #9CD3BB;
   transition: ease-in-out 0.5s;
   border: 1px solid black;
 }
@@ -781,7 +781,7 @@ header {
 }
 .contactContainer .contact a i:hover,
 .contactContainer .socialIcons a i:hover {
-  color: rgb(169, 34, 124);
+  color: #D39CD3;
   transition: 0.5 ease-in-out;
 }
 .contactContainer .contact {
@@ -801,7 +801,7 @@ header {
 }
 .contactContainer .contact .contactButton:hover {
   color: black;
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f6b53c);
+  background: #D39CD3;
   transition: ease-in-out 0.5s;
   border: 1px solid black;
 }

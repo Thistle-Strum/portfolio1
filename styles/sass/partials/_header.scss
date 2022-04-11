@@ -13,20 +13,20 @@ header {
 // ***********************************************
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animate1 {
-    0%   {background-color: rgb(65, 7, 60);}
-    20%  {background-color: rgb(103, 18, 74);}
-    40%  {background-color: rgb(100, 33, 113);}
-    60% {background-color: rgb(106, 43, 124);}
+    0%   {background-color: #321325;}
+    20%  {background-color: #5F0F40;}
+    40%  {background-color: #9a0351;}
+    60% {background-color: rgb(70, 18, 103);}
     80% {background-color: rgb(124, 115, 158);}
     100% {background-color: rgb(34, 42, 54);}
 }
 	
 /* Standard syntax */
 @keyframes animate1 {
-    0%   {background-color: rgb(65, 7, 60);}
-    20%  {background-color: rgb(103, 18, 74);}
-    40%  {background-color: rgb(100, 33, 113);}
-    60% {background-color: rgb(106, 43, 124);}
+    0%   {background-color: #321325;}
+    20%  {background-color: #5F0F40;}
+    40%  {background-color: #9a0351;}
+    60% {background-color: rgb(70, 18, 103);}
     80% {background-color: rgb(124, 115, 158);}
     100% {background-color: rgb(34, 42, 54);}
 }
