@@ -4,6 +4,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 5% 0 0 0;
-
+    a {
+        color: rgb(220, 220, 220);
+        text-decoration: none;
+        text-align: center;
+        li a:hover {
+            color:  #9CD3BB;
+            transition:  ease  0.5s;
+        }
+    }
 }
 

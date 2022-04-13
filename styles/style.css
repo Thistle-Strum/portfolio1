@@ -275,7 +275,7 @@ ul {
 }
 
 a {
-  color: white;
+  color: rgb(220, 220, 220);
   text-decoration: none;
   text-align: center;
 }
@@ -469,7 +469,7 @@ header {
   height: 300px;
   border-radius: 50%;
   background-color: rgb(156, 211, 187);
-  margin: 1% 0 0 3%;
+  margin: 6% 0 0 3%;
   position: relative;
 }
 .aboutContainer .aboutParagraph1 .shape2 img {
@@ -478,27 +478,11 @@ header {
   top: 43px;
   left: 4px;
 }
-.aboutContainer .aboutParagraph1 .aboutParagraph2 {
+.aboutContainer .aboutParagraph2 {
   font-size: 1rem;
   font-weight: 400;
   text-align: right;
-}
-.aboutContainer a {
-  display: inline-block;
-  color: black;
-  font-weight: 600;
-  font-size: 1.05rem;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  padding: 0 5px;
-  border: transparent 1px solid;
-  position: relative;
-  right: 5px;
-}
-.aboutContainer a:hover {
-  background: #9CD3BB;
-  transition: ease-in-out 0.5s;
-  border: black 1px solid;
+  z-index: 10;
 }
 
 .skillsContainer {
@@ -535,7 +519,7 @@ header {
   align-items: center;
 }
 .skillsContainer .progLangs .lispIcon img {
-  width: 30px;
+  width: 24px;
   padding-bottom: 4px;
 }
 .skillsContainer .libraries .toneIcon {
@@ -546,7 +530,7 @@ header {
 }
 .skillsContainer .libraries .toneIcon img {
   width: 79px;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .projectsContainer {
@@ -731,12 +715,13 @@ header {
   border: 1px solid transparent;
 }
 .projectButtons .button:hover {
+  color: white;
   background: #9CD3BB;
   transition: ease-in-out 0.5s;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 .projectButtons .button a {
-  color: black;
+  color: white;
   font-size: 0.95rem;
   padding: 0 7px;
 }
@@ -826,6 +811,15 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 5% 0 0 0;
+}
+.navContainer a {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-align: center;
+}
+.navContainer a li a:hover {
+  color: #9CD3BB;
+  transition: ease 0.5s;
 }
 
 @media (max-width: 1440px) {
