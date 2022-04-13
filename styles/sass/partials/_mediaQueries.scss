@@ -29,6 +29,13 @@
         }
     }
 }
+
+@media (max-width: 930px)  {
+    .aboutContainer .aboutParagraph1 .shape2 {
+        margin: 6% 0 0 3%
+    }
+}
+
 /* collapsed nav bar */
 @media (max-width: 850px) {
 
@@ -187,13 +194,27 @@
         }
     }
 
-    @media only screen 
-    and (max-device-width: 640px), 
-    only screen and (max-device-width: 667px), 
-    only screen and (max-width: 480px) {
-
+@media (max-width: 773px) {
+    .aboutContainer {
+        .shape1 {
+        width: 250px;
+        height: 250px;
+        }
+        .aboutImgs .keyboard {
+            right: 10px;
+        }
+        .aboutParagraph1 .shape2 {
+            width: 250px;
+            height: 250px;
+        }
+        a {
+            margin-bottom: 0px;
+        }
+        .aboutImgs2 {
+        height: 275px;
+        }
+    }
 }
-
 
 @media (max-width: 675px) {
     #linePortrait {
@@ -213,7 +234,6 @@
         top: -3%;
         }
     }
-  
 
     #about .wrapper,
     #skills .wrapper,
@@ -224,7 +244,6 @@
 }
 
 @media (max-width: 530px) {
-
     header {
         min-height: 90vh;
     }
@@ -248,12 +267,6 @@
         width: 100%
     }
 }
-
-
-
-
-
-
 
 
 @media (max-width: 450px) {

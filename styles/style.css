@@ -469,7 +469,7 @@ header {
   height: 300px;
   border-radius: 50%;
   background-color: rgb(156, 211, 187);
-  margin: 6% 0 0 3%;
+  margin: 2% 0 0 3%;
   position: relative;
 }
 .aboutContainer .aboutParagraph1 .shape2 img {
@@ -530,7 +530,7 @@ header {
 }
 .skillsContainer .libraries .toneIcon img {
   width: 79px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .projectsContainer {
@@ -854,6 +854,11 @@ header {
     text-align: left;
   }
 }
+@media (max-width: 930px) {
+  .aboutContainer .aboutParagraph1 .shape2 {
+    margin: 6% 0 0 3%;
+  }
+}
 /* collapsed nav bar */
 @media (max-width: 850px) {
   .wrapper {
@@ -1010,6 +1015,25 @@ header {
 .skillsContainer .databases,
 .skillsContainer .workflow {
     width: 100%;
+  }
+}
+@media (max-width: 773px) {
+  .aboutContainer .shape1 {
+    width: 250px;
+    height: 250px;
+  }
+  .aboutContainer .aboutImgs .keyboard {
+    right: 10px;
+  }
+  .aboutContainer .aboutParagraph1 .shape2 {
+    width: 250px;
+    height: 250px;
+  }
+  .aboutContainer a {
+    margin-bottom: 0px;
+  }
+  .aboutContainer .aboutImgs2 {
+    height: 275px;
   }
 }
 @media (max-width: 675px) {
