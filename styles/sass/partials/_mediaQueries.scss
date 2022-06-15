@@ -241,6 +241,13 @@
     #contact .wrapper {
         width: 95%;
     }
+    .contactContainer .contact {
+        display: flex;
+        flex-wrap: wrap;
+        li  {
+            padding-bottom: 10px
+        }
+    }
 }
 
 @media (max-width: 530px) {
